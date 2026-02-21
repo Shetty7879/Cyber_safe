@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberSafe India - Learn about Cybersecurity.">
+    <title>Learn - CyberSafe India</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .learn-section {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            scroll-margin-top: 5rem;
+        }
+
+        .learn-title {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .learn-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .learn-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            list-style-type: disc;
+        }
+
+        .learn-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tip-box {
+            background-color: rgba(29, 78, 216, 0.05);
+            border-left: 4px solid var(--color-primary);
+            padding: 1rem;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 1.5rem 0;
+        }
+
+        [data-theme="dark"] .tip-box {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="assests/India_cybersecurity_logo.jpg" alt="CyberSafe Logo" class="logo-img"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#1d4ed8';">
+                <a href="index.html" class="site-title">CyberSafe India</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="navHome">Home</a>
+                <a href="learn.html" class="active" data-i18n="navLearn">Learn</a>
+                <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
+                <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
+                <a href="index.html#help" data-i18n="navHelp">Help</a>
+            </nav>
+
+            <div class="nav-controls">
+                <select id="lang-select" class="lang-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+                <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
+                    Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="hero-title" data-i18n="learn_hero_title" style="text-align: center; margin-bottom: 3rem;">
+                Cybersecurity Learning Modules</h1>
+
+            <section id="password" class="card learn-section">
+                <h2 class="learn-title" data-i18n="learn_pwd_title">🔐 Password Safety & Account Protection</h2>
+                <div class="learn-content">
+                    <p data-i18n="learn_pwd_desc">Securing your online accounts acts as the first line of defense against
+                        cybercriminals. The
+                        foundation of good digital hygiene begins with strong, unique passwords for every service.</p>
+
+                    <div class="tip-box">
+                        <strong data-i18n="learn_pro_tip">Pro Tip:</strong> <span data-i18n="learn_pwd_tip">Use a
+                            combination of at least 12 characters including uppercase,
+                            lowercase, numbers, and symbols. Avoid common words or personal information like
+                            birthdates.</span>
+                    </div>
+
+                    <h3 data-i18n="learn_best_practices" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Best
+                        Practices: Do’s and Don’ts</h3>
+
+                    <div class="grid" style="margin-bottom: 2rem;">
+                        <!-- Do's -->
+                        <div class="card" style="border-top: 4px solid var(--color-success); padding: 1rem;">
+                            <h4 data-i18n="learn_do" style="color: var(--color-success); margin-bottom: 0.5rem;">DO:</h4>
+                            <ul>
+                                <li data-i18n="pwd_do_1">Use passwords with at least 8–12 characters</li>
+                                <li data-i18n="pwd_do_2">Combine uppercase, lowercase, numbers, and symbols</li>
+                                <li data-i18n="pwd_do_3">Use a unique password for each account</li>
+                                <li data-i18n="pwd_do_4">Enable two-factor authentication where available</li>
+                                <li data-i18n="pwd_do_5">Change passwords if a breach is suspected</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don'ts -->
+                        <div class="card" style="border-top: 4px solid var(--color-danger); padding: 1rem;">
+                            <h4 data-i18n="learn_dont" style="color: var(--color-danger); margin-bottom: 0.5rem;">DON’T:
+                            </h4>
+                            <ul>
+                                <li data-i18n="pwd_dont_1">Reuse the same password across multiple sites</li>
+                                <li data-i18n="pwd_dont_2">Share passwords or OTPs with anyone</li>
+                                <li data-i18n="pwd_dont_3">Use personal details (name, DOB, phone number)</li>
+                                <li data-i18n="pwd_dont_4">Save passwords in plain text</li>
+                                <li data-i18n="pwd_dont_5">Click suspicious links asking to reset passwords</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Password Strength Analyzer -->
+                    <div class="pwd-analyzer" style="margin-top: 2rem; padding-top: 0; border: none;">
+                        <div class="pwd-input-group" style="position: relative; margin-bottom: 1rem;">
+                            <input type="password" id="password-input" data-i18n="pwdPh"
+                                placeholder="Enter your password..." autocomplete="off">
+                            <span id="toggle-password" class="toggle-icon">👁️</span>
+                        </div>
+
+                        <div class="strength-meter-container">
+                            <div class="strength-meter-bar" id="strength-bar"></div>
+                        </div>
+
+                        <div class="strength-text" id="strength-text" data-i18n="pwd_enter">Enter password</div>
+
+                        <ul class="suggestions" id="suggestions-list">
+                            <!-- Suggestions will appear here -->
+                        </ul>
+
+                        <div class="action-buttons"
+                            style="margin-top: 1.5rem; display: flex; justify-content: flex-start;">
+                            <button id="generate-btn" class="btn btn-outline" data-i18n="pwd_suggest"
+                                style="font-size: 0.85rem; padding: 0.5rem 1rem;">Suggest Strong Password</button>
+                        </div>
+
+                        <p class="pwd-disclaimer"
+                            style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.85rem; font-style: italic;">
+                            Passwords are checked locally in your browser and are not stored or transmitted.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="phishing" class="card learn-section">
+                <h2 class="learn-title" data-i18n="learn_phish_title">🎣 Phishing Awareness</h2>
+                <div class="learn-content">
+                    <p data-i18n="learn_phish_desc">Phishing is a deceptive practice where cybercriminals send fraudulent
+                        messages (via email, SMS,
+                        or social media) designed to trick you into revealing sensitive information or installing
+                        malware.</p>
+
+                    <div class="tip-box">
+                        <strong data-i18n="learn_red_flag">Red Flag:</strong> <span data-i18n="learn_phish_tip">The
+                            message creates a false sense of urgency (e.g., "Your account
+                            will be suspended in 24 hours!").</span>
+                    </div>
+
+                    <h3 data-i18n="learn_best_practices_2" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Best
+                        Practices: Do’s and Don’ts</h3>
+
+                    <div class="grid" style="margin-bottom: 1rem;">
+                        <!-- Do's -->
+                        <div class="card" style="border-top: 4px solid var(--color-success); padding: 1rem;">
+                            <h4 data-i18n="learn_do_2" style="color: var(--color-success); margin-bottom: 0.5rem;">DO:
+                            </h4>
+                            <ul>
+                                <li data-i18n="phish_do_1">Verify the sender’s email address carefully</li>
+                                <li data-i18n="phish_do_2">Check website URLs before clicking links</li>
+                                <li data-i18n="phish_do_3">Use official apps or websites for logins</li>
+                                <li data-i18n="phish_do_4">Enable email spam filters</li>
+                                <li data-i18n="phish_do_5">Report phishing attempts to official platforms</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don'ts -->
+                        <div class="card" style="border-top: 4px solid var(--color-danger); padding: 1rem;">
+                            <h4 data-i18n="learn_dont_2" style="color: var(--color-danger); margin-bottom: 0.5rem;">
+                                DON’T:</h4>
+                            <ul>
+                                <li data-i18n="phish_dont_1">Click on suspicious links or attachments</li>
+                                <li data-i18n="phish_dont_2">Share OTPs, passwords, or bank details</li>
+                                <li data-i18n="phish_dont_3">Trust urgent messages asking for immediate action</li>
+                                <li data-i18n="phish_dont_4">Download files from unknown sources</li>
+                                <li data-i18n="phish_dont_5">Assume messages are genuine because they look official</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bullying" class="card learn-section">
+                <h2 class="learn-title" data-i18n="learn_bull_title">🛡️ Cyberbullying Prevention</h2>
+                <div class="learn-content">
+                    <p data-i18n="learn_bull_desc">Cyberbullying includes sending, posting, or sharing negative, harmful,
+                        false, or mean content
+                        about someone else. It can happen on social media, messaging apps, gaming platforms, and mobile
+                        phones.</p>
+
+                    <div class="tip-box">
+                        <strong data-i18n="learn_action_plan">Action Plan:</strong> <span data-i18n="learn_bull_tip">STOP,
+                            BLOCK, and TELL. Do not retaliate. Block the offender and
+                            report the behavior to the platform or a trusted adult.</span>
+                    </div>
+
+                    <h3 data-i18n="learn_best_practices_3" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Best
+                        Practices: Do’s and Don’ts</h3>
+
+                    <div class="grid" style="margin-bottom: 1rem;">
+                        <!-- Do's -->
+                        <div class="card" style="border-top: 4px solid var(--color-success); padding: 1rem;">
+                            <h4 data-i18n="learn_do_3" style="color: var(--color-success); margin-bottom: 0.5rem;">DO:
+                            </h4>
+                            <ul>
+                                <li data-i18n="bull_do_1">Block and report cyberbullying behavior</li>
+                                <li data-i18n="bull_do_2">Save evidence such as messages or screenshots</li>
+                                <li data-i18n="bull_do_3">Speak to a trusted adult, teacher, or parent</li>
+                                <li data-i18n="bull_do_4">Use platform reporting tools responsibly</li>
+                                <li data-i18n="bull_do_5">Support others who are being bullied online</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don'ts -->
+                        <div class="card" style="border-top: 4px solid var(--color-danger); padding: 1rem;">
+                            <h4 data-i18n="learn_dont_3" style="color: var(--color-danger); margin-bottom: 0.5rem;">
+                                DON’T:</h4>
+                            <ul>
+                                <li data-i18n="bull_dont_1">Respond angrily or engage with bullies</li>
+                                <li data-i18n="bull_dont_2">Share hurtful messages or images</li>
+                                <li data-i18n="bull_dont_3">Participate in online harassment</li>
+                                <li data-i18n="bull_dont_4">Blame yourself for cyberbullying</li>
+                                <li data-i18n="bull_dont_5">Ignore repeated abusive behavior</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="privacy" class="card learn-section">
+                <h2 class="learn-title" data-i18n="learn_priv_title">👁️🗨️ Privacy Protection</h2>
+                <div class="learn-content">
+                    <p data-i18n="learn_priv_desc">Your personal data is valuable. Over-sharing online can lead to
+                        identity theft, stalking, and
+                        digital impersonation.</p>
+
+                    <div class="tip-box">
+                        <strong data-i18n="learn_golden_rule">Golden Rule:</strong> <span data-i18n="learn_priv_tip">Once
+                            something is posted online, it is almost impossible to
+                            completely remove. Think before you post.</span>
+                    </div>
+
+                    <h3 data-i18n="learn_best_practices_4" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Best
+                        Practices: Do’s and Don’ts</h3>
+
+                    <div class="grid" style="margin-bottom: 1rem;">
+                        <!-- Do's -->
+                        <div class="card" style="border-top: 4px solid var(--color-success); padding: 1rem;">
+                            <h4 data-i18n="learn_do_4" style="color: var(--color-success); margin-bottom: 0.5rem;">DO:
+                            </h4>
+                            <ul>
+                                <li data-i18n="priv_do_1">Review privacy settings on social media regularly</li>
+                                <li data-i18n="priv_do_2">Share personal information only on trusted platforms</li>
+                                <li data-i18n="priv_do_3">Use strong passwords and enable two-factor authentication</li>
+                                <li data-i18n="priv_do_4">Keep software and apps updated</li>
+                                <li data-i18n="priv_do_5">Log out from shared or public devices</li>
+                            </ul>
+                        </div>
+
+                        <!-- Don'ts -->
+                        <div class="card" style="border-top: 4px solid var(--color-danger); padding: 1rem;">
+                            <h4 data-i18n="learn_dont_4" style="color: var(--color-danger); margin-bottom: 0.5rem;">
+                                DON’T:</h4>
+                            <ul>
+                                <li data-i18n="priv_dont_1">Share personal details like address, phone number, or ID
+                                    online</li>
+                                <li data-i18n="priv_dont_2">Accept friend requests from unknown people</li>
+                                <li data-i18n="priv_dont_3">Allow unnecessary app permissions</li>
+                                <li data-i18n="priv_dont_4">Post sensitive photos or documents publicly</li>
+                                <li data-i18n="priv_dont_5">Use public Wi-Fi for sensitive transactions without
+                                    protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>CyberSafe India &copy; 2026</p>
+            <p>Independent cybersecurity awareness initiative for the public in India</p>
+            <p class="footer-disclaimer" style="margin-top: 1rem;">CyberSafe India is an independent public awareness
+                initiative. It is not affiliated with or endorsed by the Government of India or any law enforcement
+                agency.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

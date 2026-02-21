@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CyberSafe India - Independent cybersecurity awareness initiative for the public in India.">
+    <title>CyberSafe India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <!-- Fallback to a styled div if image path is broken, but pointing to the requested path -->
+                <img src="assests/India_cybersecurity_logo.jpg" alt="CyberSafe Logo" class="logo-img"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#1d4ed8';">
+                <a href="index.html" class="site-title">CyberSafe India</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active" data-i18n="navHome">Home</a>
+                <a href="learn.html" data-i18n="navLearn">Learn</a>
+                <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
+                <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
+                <a href="#help" data-i18n="navHelp">Help</a>
+            </nav>
+
+            <div class="nav-controls">
+                <select id="lang-select" class="lang-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+                <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
+                    Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Greeting -->
+            <div class="greeting-section">
+                <span id="greeting" class="greeting-text" aria-live="polite">Good Morning</span>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="card hero-card">
+                <h1 class="hero-title" data-i18n="heroTitle">Play. Learn. Stay Safe.</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">To educate students, parents, teachers, and the
+                    general public about cybersecurity safety, online threats, and official cybercrime reporting
+                    resources.</p>
+                <div class="hero-actions">
+                    <a href="learn.html" class="btn btn-primary" data-i18n="heroBtnStart">Start Learning</a>
+                    <a href="quiz.html" class="btn btn-outline" data-i18n="heroBtnQuiz">Take Quick Quiz</a>
+                </div>
+            </section>
+
+            <!-- Core Topics Section -->
+            <section class="section">
+                <h2 class="section-title">Core Topics</h2>
+                <div class="grid">
+
+                    <!-- Card 1 -->
+                    <div class="card topic-card">
+                        <div class="topic-icon">🔐</div>
+                        <h3 data-i18n="pwdTitle">Password Safety & Account Protection</h3>
+                        <p data-i18n="pwdDesc">Learn how to secure your digital identity with strong passwords and 2FA.
+                        </p>
+
+                        <br>
+                        <a href="learn.html#password" class="btn btn-primary"
+                            style="font-size: 0.9rem; padding: 0.5rem 1rem;" data-i18n="learnMore">Learn more</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card topic-card">
+                        <div class="topic-icon">🎣</div>
+                        <h3 data-i18n="phishTitle">Phishing Awareness</h3>
+                        <p data-i18n="phishDesc">Recognize deceptive emails and messages aiming to steal your data.</p>
+                        <a href="learn.html#phishing" class="btn btn-primary"
+                            style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-top: auto;"
+                            data-i18n="learnMore">Learn more</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card topic-card">
+                        <div class="topic-icon">🛡️</div>
+                        <h3 data-i18n="bullTitle">Cyberbullying Prevention</h3>
+                        <p data-i18n="bullDesc">Understand how to stop online harassment and promote a safe digital
+                            space.</p>
+                        <a href="learn.html#bullying" class="btn btn-primary"
+                            style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-top: auto;"
+                            data-i18n="learnMore">Learn more</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card topic-card">
+                        <div class="topic-icon">👁️🗨️</div>
+                        <h3 data-i18n="privTitle">Privacy Protection</h3>
+                        <p data-i18n="privDesc">Manage your personal information safely across social media and
+                            websites.</p>
+                        <a href="learn.html#privacy" class="btn btn-primary"
+                            style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-top: auto;"
+                            data-i18n="learnMore">Learn more</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Official Cyber Crime Help & Support Section -->
+            <section id="help" class="section card help-section-card">
+                <img src="assests/National_Cyber_Crime_Reporting_Portal_logo.jpg" alt="Gov Logo" class="help-logo"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#16a34a';">
+
+                <h2 class="section-title" style="margin-bottom: 0.5rem;" data-i18n="helpTitle">Official Cyber Crime Help
+                    & Support (India)</h2>
+                <div class="help-subheading" data-i18n="helpSub">OFFICIAL GOVERNMENT OF INDIA RESOURCES</div>
+
+                <div class="help-content">
+                    <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">National Cyber Crime
+                        Helpline: 1930</p>
+                    <ul>
+                        <li><a href="https://cybercrime.gov.in/" target="_blank"
+                                rel="noopener noreferrer">https://cybercrime.gov.in/</a></li>
+                        <li><a href="https://cybercrime.gov.in/Webform/Crime_NodalGrivanceList.aspx" target="_blank"
+                                rel="noopener noreferrer">Nodal Grievance List</a></li>
+                        <li><a href="https://www.cert-in.org.in/" target="_blank" rel="noopener noreferrer">CERT-In
+                                (Indian Computer Emergency Response Team)</a></li>
+                    </ul>
+                </div>
+
+                <a href="tel:1930" class="btn btn-danger" style="background-color: var(--color-danger); color: white;"
+                    data-i18n="helpCall">Call 1930 (India)</a>
+
+                <p class="help-disclaimer" data-i18n="helpWarn">For physical emergencies, contact local emergency
+                    services (Police: 100).</p>
+                <p class="help-note" data-i18n="helpDisc">CyberSafe India is an independent public awareness initiative.
+                    It is not affiliated with or endorsed by the Government of India or any law enforcement agency.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footerCopy">CyberSafe India &copy; 2026</p>
+            <p data-i18n="footerInitiative">Independent cybersecurity awareness initiative for the public in India</p>
+            <p class="footer-disclaimer" data-i18n="helpDisc" style="margin-top: 1rem;">CyberSafe India is an
+                independent public awareness initiative. It is not affiliated with or endorsed by the Government of
+                India or any law enforcement agency.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

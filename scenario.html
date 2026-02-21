@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberSafe India - Real-Life Scenarios.">
+    <title>Scenarios - CyberSafe India</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scenario-box {
+            background-color: var(--color-bg);
+            border: 1px solid var(--color-border);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="assests/India_cybersecurity_logo.jpg" alt="CyberSafe Logo" class="logo-img"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#1d4ed8';">
+                <a href="index.html" class="site-title">CyberSafe India</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" data-i18n="navHome">Home</a>
+                <a href="learn.html" data-i18n="navLearn">Learn</a>
+                <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
+                <a href="scenario.html" class="active" data-i18n="navScenarios">Scenarios</a>
+                <a href="index.html#help" data-i18n="navHelp">Help</a>
+            </nav>
+
+            <div class="nav-controls">
+                <select id="lang-select" class="lang-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+                <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
+                    Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container interactive-container">
+            <h1 class="hero-title" data-i18n="scenario_title" style="text-align: center; margin-bottom: 1rem;">Real-Life
+                Scenarios</h1>
+            <p class="hero-subtitle" data-i18n="scenario_subtitle" style="text-align: center; margin-bottom: 2rem;">Test
+                your instincts in these
+                common cybersecurity situations.</p>
+
+            <div id="scenario-container" class="card">
+
+                <!-- Scenarios Progress -->
+                <div
+                    style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--color-text-muted);">
+                    <span id="s-progress">Scenario 1 of 4</span>
+                </div>
+
+                <div class="question-block">
+                    <h3 id="scenario-title" data-i18n="scenario_loading" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                        Loading scenario...</h3>
+
+                    <div id="scenario-desc" class="scenario-box">
+                        <!-- Scenario Description goes here -->
+                    </div>
+
+                    <h4 data-i18n="scenario_action" style="margin-bottom: 1rem;">What is your action?</h4>
+                    <div id="s-options-container" class="options-list">
+                        <!-- Options rendered by JS -->
+                    </div>
+                </div>
+
+                <div id="scenario-feedback" class="feedback-box">
+                    <strong id="s-feedback-title" style="display: block; margin-bottom: 0.5rem;"></strong>
+                    <p id="s-feedback-text"></p>
+                    <button id="s-next-btn" class="btn btn-primary" data-i18n="scenario_next"
+                        style="margin-top: 1rem;">Next Scenario</button>
+                </div>
+
+                <div id="scenario-end" style="display: none; text-align: center; margin-top: 2rem;">
+                    <h2 data-i18n="scenario_completed">All Scenarios Completed!</h2>
+                    <p class="hero-subtitle" data-i18n="scenario_well_done" style="margin-top: 1rem;">Well done
+                        interpreting real-world cyber threats
+                        safely.</p>
+                    <a href="learn.html" class="btn btn-outline" data-i18n="scenario_go_learn"
+                        style="margin-top: 1rem; margin-right: 0.5rem;">Go to
+                        Learn</a>
+                    <button class="btn btn-primary" data-i18n="scenario_restart" onclick="location.reload()"
+                        style="margin-top: 1rem;">Restart</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>CyberSafe India &copy; 2026</p>
+            <p>Independent cybersecurity awareness initiative for the public in India</p>
+            <p class="footer-disclaimer" style="margin-top: 1rem;">CyberSafe India is an independent public awareness
+                initiative. It is not affiliated with or endorsed by the Government of India or any law enforcement
+                agency.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Scenarios
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof initScenarios === 'function') {
+                initScenarios();
+            }
+        });
+    </script>
+</body>
+
+</html>
