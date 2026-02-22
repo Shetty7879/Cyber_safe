@@ -4,24 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CyberSafe India - Real-Life Scenarios.">
-    <title>Scenarios - CyberSafe India</title>
+    <meta name="description" content="CyberSafe India - All Cyber Safety Tips.">
+    <title>All Tips - CyberSafe India</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .scenario-box {
-            background-color: var(--color-bg);
-            border: 1px solid var(--color-border);
-            padding: 1.5rem;
+        /* Minimal inline styles for this specific page structure */
+        .tips-list-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--color-surface);
             border-radius: var(--radius);
-            margin-bottom: 1.5rem;
-            font-style: italic;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tip-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .tip-item:last-child {
+            border-bottom: none;
+        }
+
+        .tip-number {
+            font-weight: bold;
+            color: var(--color-primary);
+            min-width: 30px;
+        }
+
+        .tip-content {
+            flex: 1;
+            font-size: 1.1rem;
+            color: var(--color-text-main);
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Header / Navbar (Standard structure) -->
     <header class="header">
         <div class="container nav-container">
             <div class="logo-section">
@@ -36,7 +62,7 @@
                 <a href="index.html" data-i18n="navHome">Home</a>
                 <a href="learn.html" data-i18n="navLearn">Learn</a>
                 <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
-                <a href="scenario.html" class="active" data-i18n="navScenarios">Scenarios</a>
+                <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
                 <a href="parents.html" data-i18n="navParents">Parents</a>
                 <a href="index.html#help" data-i18n="navHelp">Help</a>
                 <div class="nav-controls">
@@ -75,61 +101,32 @@
     </header>
 
     <main class="main-content">
-        <div class="container interactive-container">
-            <h1 class="hero-title" data-i18n="scenario_title" style="text-align: center; margin-bottom: 1rem;">Real-Life
-                Scenarios</h1>
-            <p class="hero-subtitle" data-i18n="scenario_subtitle" style="text-align: center; margin-bottom: 2rem;">Test
-                your instincts in these
-                common cybersecurity situations.</p>
-
-            <div id="scenario-container" class="card">
-
-                <!-- Scenarios Progress -->
-                <div
-                    style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--color-text-muted);">
-                    <span id="s-progress">Scenario 1 of 4</span>
-                </div>
-
-                <div class="question-block">
-                    <h3 id="scenario-title" data-i18n="scenario_loading"
-                        style="font-size: 1.5rem; margin-bottom: 1rem;">
-                        Loading scenario...</h3>
-
-                    <div id="scenario-desc" class="scenario-box">
-                        <!-- Scenario Description goes here -->
+        <div class="container">
+            <div class="tips-list-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 1rem;"
+                    class="print-header">
+                    <div>
+                        <h1 style="color: var(--color-primary); margin: 0; font-size: 2rem;" data-i18n="allTipsTitle">
+                            Cyber Safety Tips</h1>
+                        <p style="color: var(--color-text-muted); margin-top: 0.5rem;" data-i18n="allTipsSubtitle">A
+                            complete list of daily awareness guidelines.</p>
                     </div>
-
-                    <h4 data-i18n="scenario_action" style="margin-bottom: 1rem;">What is your action?</h4>
-                    <div id="s-options-container" class="options-list">
-                        <!-- Options rendered by JS -->
-                    </div>
+                    <button onclick="window.print()" class="btn btn-primary no-print"
+                        style="display: flex; align-items: center; gap: 0.5rem;" aria-label="Print Tips">
+                        <span>🖨️</span> <span data-i18n="printBtn">Print / Save PDF</span>
+                    </button>
                 </div>
 
-                <div id="scenario-feedback" class="feedback-box">
-                    <strong id="s-feedback-title" style="display: block; margin-bottom: 0.5rem;"></strong>
-                    <p id="s-feedback-text"></p>
-                    <button id="s-next-btn" class="btn btn-primary" data-i18n="scenario_next"
-                        style="margin-top: 1rem;">Next Scenario</button>
+                <div id="all-tips-list">
+                    <!-- Tips rendered via JS -->
+                    <p data-i18n="loadingTips">Loading tips...</p>
                 </div>
-
-                <div id="scenario-end" style="display: none; text-align: center; margin-top: 2rem;">
-                    <h2 data-i18n="scenario_completed">All Scenarios Completed!</h2>
-                    <p class="hero-subtitle" data-i18n="scenario_well_done" style="margin-top: 1rem;">Well done
-                        interpreting real-world cyber threats
-                        safely.</p>
-                    <a href="learn.html" class="btn btn-outline" data-i18n="scenario_go_learn"
-                        style="margin-top: 1rem; margin-right: 0.5rem;">Go to
-                        Learn</a>
-                    <button class="btn btn-primary" data-i18n="scenario_restart" onclick="location.reload()"
-                        style="margin-top: 1rem;">Restart</button>
-                </div>
-
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer no-print">
         <div class="container">
             <p>CyberSafe India &copy; 2026</p>
             <p>Independent cybersecurity awareness initiative for the public in India</p>
@@ -141,12 +138,52 @@
 
     <script src="script.js"></script>
     <script>
-        // Initialize Scenarios
+        // Special initialization for the tips page
         document.addEventListener('DOMContentLoaded', () => {
-            if (typeof initScenarios === 'function') {
-                initScenarios();
-            }
+            // Let the main script handle theme/lang loading initially
+            // Wait briefly to ensure translations object is ready, then render tips
+            setTimeout(() => {
+                const lang = localStorage.getItem('lang') || 'en';
+                renderAllTips(lang);
+
+                // Hook into language changes to re-render the list
+                const langSelect = document.getElementById('lang-select');
+                if (langSelect) {
+                    langSelect.addEventListener('change', (e) => {
+                        renderAllTips(e.target.value);
+                    });
+                }
+            }, 50);
         });
+
+        function renderAllTips(lang) {
+            const listContainer = document.getElementById('all-tips-list');
+            if (!listContainer || typeof translations === 'undefined') return;
+
+            const t = translations[lang] || translations['en'];
+            const tips = t.dailyTips;
+
+            if (!tips || tips.length === 0) return;
+
+            listContainer.innerHTML = ''; // Clear loading text
+
+            tips.forEach((tip, index) => {
+                const tipDiv = document.createElement('div');
+                tipDiv.className = 'tip-item';
+
+                const numSpan = document.createElement('span');
+                numSpan.className = 'tip-number';
+                numSpan.textContent = `${index + 1}.`;
+
+                const contentSpan = document.createElement('span');
+                contentSpan.className = 'tip-content';
+                contentSpan.textContent = tip;
+
+                tipDiv.appendChild(numSpan);
+                tipDiv.appendChild(contentSpan);
+                listContainer.appendChild(tipDiv);
+            });
+        }
     </script>
 </body>
 

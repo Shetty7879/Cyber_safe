@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="parentsCardTitle">Cyber Safety for Parents - CyberSafe India</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/40/1d4ed8/ffffff?text=CS" alt="Logo" class="logo-img">
+                <a href="index.html" class="site-title">CyberSafe India</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle navigation" id="mobile-menu-btn">☰</button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="learn.html" data-i18n="navLearn">Learn</a>
+                <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
+                <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
+                <a href="parents.html" data-i18n="navParents" class="active">Parents</a>
+                <a href="index.html#help" data-i18n="navHelp">Help</a>
+                <div class="nav-controls">
+                    <span class="mobile-nav-label">Language</span>
+                    <select id="lang-select" class="lang-select" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                    <span class="mobile-nav-label theme-label-text" aria-hidden="true"
+                        data-i18n="themeToggleLabel">Theme</span>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                        title="Switch to dark mode">
+                        <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" class="moon-mask-circle" />
+                            </mask>
+                            <circle class="sun-core" cx="12" cy="12" r="5" mask="url(#moon-mask)" fill="currentColor" />
+                            <g class="sun-rays">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="section-title" data-i18n="parentsCardTitle" style="margin-bottom: 2rem;">Cyber Safety for Parents
+            </h1>
+
+            <section id="parents" class="section">
+                <div class="card" style="margin-bottom: 2rem;">
+
+                    <p data-i18n="parentsCardDesc"
+                        style="font-size: 1.125rem; margin-bottom: 1.5rem; color: var(--color-text-muted);">
+                        Help parents understand online risks faced by children and learn how to guide, protect, and
+                        support them in safe and responsible internet use.
+                    </p>
+
+                    <h3 data-i18n="parents_risk_title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Common Risks
+                        for Children Online</h3>
+                    <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
+                        <li data-i18n="parents_risk_1">Exposure to inappropriate or harmful content</li>
+                        <li data-i18n="parents_risk_2">Cyberbullying</li>
+                        <li data-i18n="parents_risk_3">Inappropriate content</li>
+                        <li data-i18n="parents_risk_4">Gaming and chat-based scams</li>
+                        <li data-i18n="parents_risk_5">Social media pressure</li>
+                    </ul>
+
+                    <h3 data-i18n="parents_best_practices" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Best
+                        Practices: Do’s and Don’ts for Parents</h3>
+                    <div class="grid" style="margin-bottom: 1.5rem;">
+                        <!-- Do's -->
+                        <div class="card" style="border-top: 4px solid var(--color-success); padding: 1rem;">
+                            <h4 data-i18n="parents_do_title"
+                                style="color: var(--color-success); margin-bottom: 0.5rem;">DO:</h4>
+                            <ul>
+                                <li data-i18n="parents_do_1">Talk openly with children about online activities</li>
+                                <li data-i18n="parents_do_2">Set age-appropriate privacy and parental controls</li>
+                                <li data-i18n="parents_do_3">Encourage children to report uncomfortable online behavior
+                                </li>
+                                <li data-i18n="parents_do_4">Monitor screen time and app usage responsibly</li>
+                                <li data-i18n="parents_do_5">Teach children never to share personal information or OTPs
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Don'ts -->
+                        <div class="card" style="border-top: 4px solid var(--color-danger); padding: 1rem;">
+                            <h4 data-i18n="parents_dont_title"
+                                style="color: var(--color-danger); margin-bottom: 0.5rem;">DON’T:</h4>
+                            <ul>
+                                <li data-i18n="parents_dont_1">Ignore changes in a child’s online behavior</li>
+                                <li data-i18n="parents_dont_2">Share children’s personal photos publicly without consent
+                                </li>
+                                <li data-i18n="parents_dont_3">Allow unrestricted access to unknown apps or websites
+                                </li>
+                                <li data-i18n="parents_dont_4">Scare children about the internet instead of educating
+                                    them</li>
+                                <li data-i18n="parents_dont_5">Dismiss online bullying or threats as harmless</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Parent-Child Conversation Tips -->
+                    <h3 data-i18n="parents_conv_title"
+                        style="margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.25rem;">Talking to Your Child About
+                        Online Safety</h3>
+                    <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
+                        <li data-i18n="parents_conv_1">Encourage open and honest conversations</li>
+                        <li data-i18n="parents_conv_2">Listen without judgment or anger</li>
+                        <li data-i18n="parents_conv_3">Ask about apps, games, and friends they interact with online</li>
+                        <li data-i18n="parents_conv_4">Explain online risks in simple, age-appropriate language</li>
+                        <li data-i18n="parents_conv_5">Reassure children they can report problems without fear</li>
+                        <li data-i18n="parents_conv_6">Discuss what to do if something feels uncomfortable online</li>
+                    </ul>
+
+                    <!-- Age-Wise Guidance -->
+                    <h3 data-i18n="parents_age_title"
+                        style="margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.25rem;">Age-Wise Online Safety
+                        Guidance</h3>
+                    <div class="grid"
+                        style="margin-bottom: 2rem; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                        <!-- Ages 8-12 -->
+                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
+                            <h4 data-i18n="parents_age_8_12"
+                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 8–12</h4>
+                            <ul>
+                                <li data-i18n="age_8_12_1">Use parental controls and supervised browsing</li>
+                                <li data-i18n="age_8_12_2">Teach children not to share personal information</li>
+                                <li data-i18n="age_8_12_3">Limit screen time and app downloads</li>
+                                <li data-i18n="age_8_12_4">Explain safe behavior in games and chat features</li>
+                            </ul>
+                        </div>
+                        <!-- Ages 13-16 -->
+                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
+                            <h4 data-i18n="parents_age_13_16"
+                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 13–16</h4>
+                            <ul>
+                                <li data-i18n="age_13_16_1">Discuss social media privacy settings</li>
+                                <li data-i18n="age_13_16_2">Talk about cyberbullying and peer pressure</li>
+                                <li data-i18n="age_13_16_3">Encourage strong passwords and account security</li>
+                                <li data-i18n="age_13_16_4">Explain risks of sharing photos or personal details</li>
+                            </ul>
+                        </div>
+                        <!-- Ages 17+ -->
+                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
+                            <h4 data-i18n="parents_age_17plus"
+                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 17+</h4>
+                            <ul>
+                                <li data-i18n="age_17_1">Discuss digital footprint and online reputation</li>
+                                <li data-i18n="age_17_2">Educate about online scams and phishing</li>
+                                <li data-i18n="age_17_3">Encourage responsible social media use</li>
+                                <li data-i18n="age_17_4">Teach safe online transactions and data protection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tip-box" style="margin-top: 1rem; border-left-color: var(--color-primary);">
+                        <strong data-i18n="parents_help_title">Help & Reporting:</strong>
+                        <span data-i18n="parents_help_desc">If your child faces online abuse, cyberbullying, or scams,
+                            collect evidence and report the issue through official channels.</span>
+                        <br><br>
+                        <ul style="margin-bottom: 0; margin-left: 1.5rem; padding-top: 0.5rem;">
+                            <li data-i18n="parents_help_1">National Cyber Crime Helpline: 1930</li>
+                            <li data-i18n="parents_help_2">cybercrime.gov.in</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footerCopy">CyberSafe India &copy; 2026</p>
+            <p data-i18n="footerInitiative">Independent cybersecurity awareness initiative for the public in India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

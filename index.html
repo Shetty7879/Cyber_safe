@@ -29,6 +29,7 @@
                 <a href="learn.html" data-i18n="navLearn">Learn</a>
                 <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
                 <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
+                <a href="parents.html" data-i18n="navParents">Parents</a>
                 <a href="#help" data-i18n="navHelp">Help</a>
                 <div class="nav-controls">
                     <span class="mobile-nav-label">Language</span>
@@ -37,9 +38,29 @@
                         <option value="hi">हिंदी (Hindi)</option>
                         <option value="kn">ಕನ್ನಡ (Kannada)</option>
                     </select>
-                    <span class="mobile-nav-label theme-label-text">Theme: Light / Dark</span>
-                    <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
-                        Theme</button>
+                    <span class="mobile-nav-label theme-label-text" aria-hidden="true"
+                        data-i18n="themeToggleLabel">Theme</span>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                        title="Switch to dark mode">
+                        <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" class="moon-mask-circle" />
+                            </mask>
+                            <circle class="sun-core" cx="12" cy="12" r="5" mask="url(#moon-mask)" fill="currentColor" />
+                            <g class="sun-rays">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -65,10 +86,77 @@
                 </div>
             </section>
 
+            <!-- Tip of the Day Section -->
+            <section class="section">
+                <div class="card tip-of-day-card"
+                    style="border-left: 4px solid var(--color-primary); background-color: var(--color-surface); padding: 1.5rem; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: center; text-align: left;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                        <div style="flex: 1;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                                <span style="font-size: 1.5rem;">💡</span>
+                                <h2 style="font-size: 1.25rem; font-weight: 700; margin: 0; color: var(--color-primary);"
+                                    data-i18n="tipOfDayTitle">Cyber Safety Tip of the Day</h2>
+                            </div>
+                            <p id="daily-tip-text"
+                                style="font-size: 1.1rem; color: var(--color-text-main); font-weight: 500; margin-left: 2.25rem; margin-bottom: 1.5rem;">
+                                Loading today's tip...
+                            </p>
+
+                            <div
+                                style="margin-left: 2.25rem; padding-top: 1rem; border-top: 1px solid var(--color-border);">
+                                <h3 style="font-size: 0.9rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem;"
+                                    data-i18n="yesterdayTipTitle">Yesterday's Tip</h3>
+                                <p id="yesterday-tip-text"
+                                    style="font-size: 0.95rem; color: var(--color-text-muted); font-style: italic;">
+                                    Loading...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem; min-width: 140px;">
+                            <button id="share-tip-btn" class="btn btn-primary"
+                                style="font-size: 0.9rem; padding: 0.5rem 1rem; display: flex; align-items: center; gap: 0.5rem; justify-content: center;">
+                                <span>📤</span> <span data-i18n="shareTipBtn">Share Tip</span>
+                            </button>
+                            <a href="tips.html" class="btn btn-outline"
+                                style="font-size: 0.9rem; padding: 0.5rem 1rem; text-align: center;"
+                                data-i18n="viewAllTipsBtn">View All Tips</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Core Topics Section -->
             <section class="section">
                 <h2 class="section-title">Core Topics</h2>
                 <div class="grid">
+
+                    <!-- Card 5 (Parents) - Moved to Top -->
+                    <div class="card topic-card" style="position: relative;">
+                        <!-- Badge -->
+                        <span class="badge" data-i18n="parentsBadge"
+                            style="position: absolute; top: -10px; right: -10px; background-color: var(--color-primary); color: #fff; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: bold; box-shadow: var(--shadow-sm); z-index: 1;">For
+                            Parents</span>
+
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="1em" height="1em" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Parent -->
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                                <!-- Child -->
+                                <circle cx="17" cy="11" r="3" />
+                                <path d="M13 21v-2a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v2" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="parentsCardTitle">Cyber Safety for Parents</h3>
+                        <p data-i18n="parentsCardDesc">Help parents understand online risks faced by children and learn
+                            how to guide, protect, and support them in safe and responsible internet use.</p>
+                        <a href="parents.html" class="btn btn-primary"
+                            style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-top: auto;"
+                            data-i18n="learnMore">Learn more</a>
+                    </div>
 
                     <!-- Card 1 -->
                     <div class="card topic-card">
@@ -114,38 +202,67 @@
                             data-i18n="learnMore">Learn more</a>
                     </div>
 
+
+
                 </div>
             </section>
 
             <!-- Official Cyber Crime Help & Support Section -->
             <section id="help" class="section card help-section-card">
-                <img src="assests/National_Cyber_Crime_Reporting_Portal_logo.jpg" alt="Gov Logo" class="help-logo"
-                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#16a34a';">
 
-                <h2 class="section-title" style="margin-bottom: 0.5rem;" data-i18n="helpTitle">Official Cyber Crime Help
-                    & Support (India)</h2>
-                <div class="help-subheading" data-i18n="helpSub">OFFICIAL GOVERNMENT OF INDIA RESOURCES</div>
+                <div class="help-header-block">
+                    <img src="assests/National_Cyber_Crime_Reporting_Portal_logo.jpg" alt="Gov Logo" class="help-logo"
+                        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=='; this.style.backgroundColor='#16a34a';">
+                    <p class="help-logo-caption">National Cyber Crime Reporting Portal (India)</p>
 
-                <div class="help-content">
-                    <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">National Cyber Crime
-                        Helpline: 1930</p>
-                    <ul>
-                        <li><a href="https://cybercrime.gov.in/" target="_blank"
-                                rel="noopener noreferrer">https://cybercrime.gov.in/</a></li>
-                        <li><a href="https://cybercrime.gov.in/Webform/Crime_NodalGrivanceList.aspx" target="_blank"
-                                rel="noopener noreferrer">Nodal Grievance List</a></li>
-                        <li><a href="https://www.cert-in.org.in/" target="_blank" rel="noopener noreferrer">CERT-In
-                                (Indian Computer Emergency Response Team)</a></li>
-                    </ul>
+                    <h2 class="section-title help-main-title" data-i18n="helpTitle">Official Cyber Crime Help & Support
+                        (India)</h2>
                 </div>
 
-                <a href="tel:1930" class="btn btn-danger" style="background-color: var(--color-danger); color: white;"
-                    data-i18n="helpCall">Call 1930 (India)</a>
+                <div class="help-body-blocks">
+                    <!-- BLOCK 1: HELPLINE (PRIMARY) -->
+                    <div class="help-block help-block-helpline">
+                        <div class="help-subheading" data-i18n="helpSub">OFFICIAL GOVERNMENT OF INDIA RESOURCES</div>
+                        <p class="helpline-number">National Cyber Crime Helpline: <strong>1930</strong></p>
+                        <a href="tel:1930" class="btn btn-danger btn-helpline" data-i18n="helpCall">Call 1930
+                            (India)</a>
+                    </div>
 
-                <p class="help-disclaimer" data-i18n="helpWarn">For physical emergencies, contact local emergency
-                    services (Police: 100).</p>
-                <p class="help-note" data-i18n="helpDisc">CyberSafe India is an independent public awareness initiative.
-                    It is not affiliated with or endorsed by the Government of India or any law enforcement agency.</p>
+                    <!-- BLOCK 2: OFFICIAL LINKS -->
+                    <div class="help-block help-block-links">
+                        <ul>
+                            <li>
+                                <span class="link-icon">🔗</span>
+                                <a href="https://cybercrime.gov.in/" target="_blank"
+                                    rel="noopener noreferrer">cybercrime.gov.in</a>
+                            </li>
+                            <li>
+                                <span class="link-icon">📑</span>
+                                <a href="https://cybercrime.gov.in/Webform/Crime_NodalGrivanceList.aspx" target="_blank"
+                                    rel="noopener noreferrer">Nodal Grievance List</a>
+                            </li>
+                            <li>
+                                <span class="link-icon">🛡️</span>
+                                <a href="https://www.cert-in.org.in/" target="_blank" rel="noopener noreferrer">CERT-In
+                                    (Indian Computer Emergency Response Team)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- BLOCK 3: EMERGENCY NOTICE -->
+                    <div class="help-block help-block-emergency">
+                        <span class="emergency-icon">🚨</span>
+                        <p class="help-emergency-text" data-i18n="helpWarn">For physical emergencies, contact local
+                            emergency services (Police: 100).</p>
+                    </div>
+                </div>
+
+                <div class="help-footer-disclaimers">
+                    <p class="help-note" data-i18n="helpDisc">CyberSafe India is an independent public awareness
+                        initiative. It is not affiliated with or endorsed by the Government of India or any law
+                        enforcement agency.</p>
+                </div>
+
             </section>
 
         </div>

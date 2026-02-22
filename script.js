@@ -10,6 +10,7 @@ const translations = {
     navLearn: "Learn",
     navQuiz: "Quiz",
     navScenarios: "Scenarios",
+    navParents: "Parents",
     navHelp: "Help",
     themeToggle: "Toggle Theme",
     greetMorning: "Good Morning",
@@ -28,6 +29,9 @@ const translations = {
     bullDesc: "Understand how to stop online harassment and promote a safe digital space.",
     privTitle: "Privacy Protection",
     privDesc: "Manage your personal information safely across social media and websites.",
+    parentsCardTitle: "Cyber Safety for Parents",
+    parentsCardDesc: "Help parents understand online risks faced by children and learn how to guide, protect, and support them in safe and responsible internet use.",
+    parentsBadge: "For Parents",
     helpTitle: "Official Cyber Crime Help & Support (India)",
     helpSub: "OFFICIAL GOVERNMENT OF INDIA RESOURCES",
     helpCall: "Call 1930 (India)",
@@ -140,6 +144,69 @@ const translations = {
     scenarioFeedbackSafe: "Safe Choice!",
     scenarioFeedbackRisky: "Risky Action!",
 
+    // Daily Tips Static
+    tipOfDayTitle: "Cyber Safety Tip of the Day",
+    yesterdayTipTitle: "Yesterday's Tip",
+    shareTipBtn: "Share Tip",
+    viewAllTipsBtn: "View All Tips",
+    shareTipSuccess: "Tip copied to clipboard!",
+    shareTipError: "Could not copy tip.",
+    shareTipText: "Cyber Safety Tip from CyberSafe India: ",
+    allTipsTitle: "Cyber Safety Tips",
+    allTipsSubtitle: "A complete list of daily awareness guidelines.",
+    printBtn: "Print / Save PDF",
+    loadingTips: "Loading tips...",
+
+    // Cyber Safety for Parents Section
+    parents_title: "Cyber Safety for Parents",
+    parents_desc: "Guidance for parents to help children use the internet safely, responsibly, and confidently.",
+    parents_risks_title: "Common Risks to Highlight",
+    parents_risk_1: "Online predators",
+    parents_risk_2: "Cyberbullying",
+    parents_risk_3: "Inappropriate content",
+    parents_risk_4: "Gaming and chat-based scams",
+    parents_risk_5: "Social media pressure",
+    parents_best_practices: "Best Practices: Do’s and Don’ts for Parents",
+    parents_do_title: "DO:",
+    parents_do_1: "Talk openly with children about online activities",
+    parents_do_2: "Set age-appropriate privacy and parental controls",
+    parents_do_3: "Encourage children to report uncomfortable online behavior",
+    parents_do_4: "Monitor screen time and app usage responsibly",
+    parents_do_5: "Teach children never to share personal information or OTPs",
+    parents_dont_title: "DON’T:",
+    parents_dont_1: "Ignore changes in a child’s online behavior",
+    parents_dont_2: "Share children’s personal photos publicly without consent",
+    parents_dont_3: "Allow unrestricted access to unknown apps or websites",
+    parents_dont_4: "Scare children about the internet instead of educating them",
+    parents_dont_5: "Dismiss online bullying or threats as harmless",
+    parents_help_title: "Help & Reporting:",
+    parents_help_desc: "If your child faces online abuse, cyberbullying, or scams, collect evidence and report the issue through official channels.",
+    parents_help_1: "National Cyber Crime Helpline: 1930",
+    parents_help_2: "cybercrime.gov.in",
+    parents_conv_title: "Talking to Your Child About Online Safety",
+    parents_conv_1: "Encourage open and honest conversations",
+    parents_conv_2: "Listen without judgment or anger",
+    parents_conv_3: "Ask about apps, games, and friends they interact with online",
+    parents_conv_4: "Explain online risks in simple, age-appropriate language",
+    parents_conv_5: "Reassure children they can report problems without fear",
+    parents_conv_6: "Discuss what to do if something feels uncomfortable online",
+    parents_age_title: "Age-Wise Online Safety Guidance",
+    parents_age_8_12: "Ages 8–12",
+    age_8_12_1: "Use parental controls and supervised browsing",
+    age_8_12_2: "Teach children not to share personal information",
+    age_8_12_3: "Limit screen time and app downloads",
+    age_8_12_4: "Explain safe behavior in games and chat features",
+    parents_age_13_16: "Ages 13–16",
+    age_13_16_1: "Discuss social media privacy settings",
+    age_13_16_2: "Talk about cyberbullying and peer pressure",
+    age_13_16_3: "Encourage strong passwords and account security",
+    age_13_16_4: "Explain risks of sharing photos or personal details",
+    parents_age_17plus: "Ages 17+",
+    age_17_1: "Discuss digital footprint and online reputation",
+    age_17_2: "Educate about online scams and phishing",
+    age_17_3: "Encourage responsible social media use",
+    age_17_4: "Teach safe online transactions and data protection",
+
     // Quiz & Scenario Data Arrays
     quizData: [
       {
@@ -242,6 +309,30 @@ const translations = {
         correct: 1,
         explanation: "Open public Wi-Fi networks are vulnerable to 'Man-in-the-Middle' attacks. It's safer to use your own cellular data for sensitive transactions. Incognito mode does not encrypt your connection."
       }
+    ],
+
+    // Daily Safety Tips Array (Minimum 20)
+    dailyTips: [
+      "Never share OTPs with anyone — banks never ask for them.",
+      "Always check website URLs before entering login details.",
+      "Use different passwords for different accounts.",
+      "Do not click links from unknown messages or emails.",
+      "Enable two-factor authentication wherever possible.",
+      "Report financial cybercrimes immediately to 1930.",
+      "Avoid using public Wi-Fi for sensitive transactions like banking.",
+      "Keep your phone and computer operating systems updated.",
+      "Be wary of urgent messages demanding immediate money transfers.",
+      "Verify unexpected friend requests, even if they appear to be from someone you know.",
+      "Use strong passwords with a mix of letters, numbers, and special characters.",
+      "Do not download apps from outside official app stores.",
+      "Regularly back up your important data to offline storage or a secure cloud.",
+      "Lock your screen when leaving your device unattended.",
+      "Review privacy settings on your social media accounts regularly.",
+      "Do not scan random QR codes to receive money; you only scan to pay.",
+      "If a job offer requires you to pay a 'registration fee', it is likely a scam.",
+      "Check your bank statements regularly for unauthorized transactions.",
+      "Think before you post personal information online; it can be used for identity theft.",
+      "Always log out of your accounts when using a shared or public computer."
     ]
   },
   hi: {
@@ -249,6 +340,7 @@ const translations = {
     navLearn: "सीखें",
     navQuiz: "क्विज़",
     navScenarios: "परिदृश्य",
+    navParents: "माता-पिता",
     navHelp: "सहायता",
     themeToggle: "थीम बदलें",
     greetMorning: "शुभ प्रभात",
@@ -267,6 +359,9 @@ const translations = {
     bullDesc: "ऑनलाइन उत्पीड़न को रोकने और सुरक्षित डिजिटल स्पेस को बढ़ावा देने का तरीका समझें।",
     privTitle: "गोपनीयता सुरक्षा",
     privDesc: "सोशल मीडिया और वेबसाइटों पर अपनी व्यक्तिगत जानकारी को सुरक्षित रूप से प्रबंधित करें।",
+    parentsCardTitle: "माता-पिता के लिए साइबर सुरक्षा",
+    parentsCardDesc: "बच्चों के सामने आने वाले ऑनलाइन जोखिमों को समझने में माता-पिता की मदद करें और उन्हें सुरक्षित और जिम्मेदार इंटरनेट उपयोग में मार्गदर्शन, सुरक्षा और समर्थन देने का तरीका जानें।",
+    parentsBadge: "माता-पिता के लिए",
     helpTitle: "आधिकारिक साइबर अपराध सहायता और समर्थन (भारत)",
     helpSub: "आधिकारिक भारत सरकार के संसाधन",
     helpCall: "1930 पर कॉल करें (भारत)",
@@ -376,8 +471,72 @@ const translations = {
     scenario_go_learn: "सीखने पर जाएं",
     scenario_restart: "पुनर्प्रारंभ करें",
     scenarioProgress: "परिदृश्य {current} का {total}",
+    scenarioProgress: "परिदृश्य {current} का {total}",
     scenarioFeedbackSafe: "सुरक्षित विकल्प!",
     scenarioFeedbackRisky: "जोखिम भरा कदम!",
+
+    // Daily Tips Static
+    tipOfDayTitle: "आज का साइबर सुरक्षा सुझाव",
+    yesterdayTipTitle: "कल का सुझाव",
+    shareTipBtn: "सुझाव साझा करें",
+    viewAllTipsBtn: "सभी सुझाव देखें",
+    shareTipSuccess: "सुझाव क्लिपबोर्ड पर कॉपी हो गया!",
+    shareTipError: "सुझाव कॉपी नहीं किया जा सका।",
+    shareTipText: "CyberSafe India से साइबर सुरक्षा सुझाव: ",
+    allTipsTitle: "साइबर सुरक्षा सुझाव",
+    allTipsSubtitle: "दैनिक जागरूकता दिशानिर्देशों की एक पूरी सूची।",
+    printBtn: "प्रिंट करें / PDF सेव करें",
+    loadingTips: "सुझाव लोड हो रहे हैं...",
+
+    // Cyber Safety for Parents Section
+    parents_title: "माता-पिता के लिए साइबर सुरक्षा",
+    parents_desc: "बच्चों को सुरक्षित, जिम्मेदारी से और आत्मविश्वास के साथ इंटरनेट का उपयोग करने में मदद करने के लिए माता-पिता के लिए मार्गदर्शन।",
+    parents_risks_title: "प्रमुख सामान्य जोखिम",
+    parents_risk_1: "ऑनलाइन शिकारी (Online predators)",
+    parents_risk_2: "साइबर बुलिंग (Cyberbullying)",
+    parents_risk_3: "अनुचित सामग्री",
+    parents_risk_4: "गेमिंग और चैट-आधारित घोटाले",
+    parents_risk_5: "सोशल मीडिया का दबाव",
+    parents_best_practices: "सर्वोत्तम अभ्यास: माता-पिता के लिए क्या करें और क्या न करें",
+    parents_do_title: "क्या करें:",
+    parents_do_1: "बच्चों के साथ ऑनलाइन गतिविधियों के बारे में खुलकर बात करें",
+    parents_do_2: "उम्र के अनुसार गोपनीयता और पैरेंटल कंट्रोल सेट करें",
+    parents_do_3: "बच्चों को असुविधाजनक ऑनलाइन व्यवहार की रिपोर्ट करने के लिए प्रोत्साहित करें",
+    parents_do_4: "स्क्रीन टाइम और ऐप के इस्तेमाल की जिम्मेदारी से निगरानी करें",
+    parents_do_5: "बच्चों को सिखाएं कि वे कभी भी व्यक्तिगत जानकारी या ओटीपी साझा न करें",
+    parents_dont_title: "क्या न करें:",
+    parents_dont_1: "बच्चे के ऑनलाइन व्यवहार में बदलाव को नज़रअंदाज़ न करें",
+    parents_dont_2: "सहमति के बिना बच्चों की व्यक्तिगत तस्वीरें सार्वजनिक रूप से साझा न करें",
+    parents_dont_3: "अज्ञात ऐप्स या वेबसाइटों तक अप्रतिबंधित पहुंच की अनुमति न दें",
+    parents_dont_4: "बच्चों को इंटरनेट के बारे में डराने के बजाय उन्हें शिक्षित करें",
+    parents_dont_5: "ऑनलाइन बुलिंग या धमकियों को हानिरहित मानकर खारिज न करें",
+    parents_help_title: "सहायता और रिपोर्टिंग:",
+    parents_help_desc: "यदि आपका बच्चा ऑनलाइन दुर्व्यवहार, साइबरबुलिंग या घोटालों का सामना करता है, तो सबूत इकट्ठा करें और आधिकारिक चैनलों के माध्यम से समस्या की रिपोर्ट करें।",
+    parents_help_1: "राष्ट्रीय साइबर अपराध हेल्पलाइन: 1930",
+    parents_help_2: "cybercrime.gov.in",
+    parents_conv_title: "अपने बच्चे से ऑनलाइन सुरक्षा के बारे में बात करना",
+    parents_conv_1: "खुली और ईमानदार बातचीत को प्रोत्साहित करें",
+    parents_conv_2: "बिना किसी निर्णय या क्रोध के सुनें",
+    parents_conv_3: "उन ऐप्स, गेम्स और दोस्तों के बारे में पूछें जिनके साथ वे ऑनलाइन जुड़ते हैं",
+    parents_conv_4: "सरल, उम्र के अनुसार उपयुक्त भाषा में ऑनलाइन जोखिमों को स्पष्ट करें",
+    parents_conv_5: "बच्चों को आश्वस्त करें कि वे बिना किसी डर के समस्याओं की रिपोर्ट कर सकते हैं",
+    parents_conv_6: "चर्चा करें कि अगर ऑनलाइन कुछ असुविधाजनक लगे तो क्या करें",
+    parents_age_title: "उम्र के अनुसार ऑनलाइन सुरक्षा मार्गदर्शन",
+    parents_age_8_12: "उम्र 8-12",
+    age_8_12_1: "पैरेंटल कंट्रोल और पर्यवेक्षित ब्राउज़िंग का उपयोग करें",
+    age_8_12_2: "बच्चों को व्यक्तिगत जानकारी साझा न करना सिखाएं",
+    age_8_12_3: "स्क्रीन टाइम और ऐप डाउनलोड को सीमित करें",
+    age_8_12_4: "गेम्स और चैट सुविधाओं में सुरक्षित व्यवहार स्पष्ट करें",
+    parents_age_13_16: "उम्र 13-16",
+    age_13_16_1: "सोशल मीडिया गोपनीयता सेटिंग्स पर चर्चा करें",
+    age_13_16_2: "साइबर बुलिंग और साथियों के दबाव के बारे में बात करें",
+    age_13_16_3: "मजबूत पासवर्ड और खाता सुरक्षा को प्रोत्साहित करें",
+    age_13_16_4: "तस्वीरें या व्यक्तिगत विवरण साझा करने के जोखिमों को स्पष्ट करें",
+    parents_age_17plus: "उम्र 17+",
+    age_17_1: "डिजिटल फ़ुटप्रिंट और ऑनलाइन प्रतिष्ठा पर चर्चा करें",
+    age_17_2: "ऑनलाइन घोटालों और फ़िशिंग के बारे में शिक्षित करें",
+    age_17_3: "जिम्मेदार सोशल मीडिया उपयोग को प्रोत्साहित करें",
+    age_17_4: "सुरक्षित ऑनलाइन लेन-देन और डेटा सुरक्षा सिखाएं",
 
     // Quiz Data Array
     quizData: [
@@ -390,7 +549,7 @@ const translations = {
           "स्पैम ईमेल को रोकने के लिए।"
         ],
         answer: 1,
-        explanation: "फ़िशिंग धोखे पर निर्भर करता है, अक्सर पीड़ितों को पासवर्ड या क्रेडिट कार्ड नंबर सौंपने के लिए धोखा देने के लिए तत्काल या नकली संस्थागत संदेशों का उपयोग किया जाता है।"
+        explanation: "फ़िशिंग धोखे पर निर्भर करता है, अक्सर पीड़ितों को पासवर्ड या क्रेडिट कार्ड नंबर सौंपने के लिए तत्काल या नकली संस्थागत संदेशों का उपयोग किया जाता है।"
       },
       {
         q: "टू-फैक्टर ऑथेंटिकेशन (2FA) का उपयोग करना क्यों महत्वपूर्ण है?",
@@ -483,6 +642,30 @@ const translations = {
         correct: 1,
         explanation: "खुले सार्वजनिक वाई-फाई नेटवर्क 'मैन-इन-द-मिडिल' हमलों के प्रति संवेदनशील होते हैं। संवेदनशील लेनदेन के लिए अपने स्वयं के सेलुलर डेटा का उपयोग करना अधिक सुरक्षित है। गुप्त मोड आपके कनेक्शन को एन्क्रिप्ट नहीं करता है।"
       }
+    ],
+
+    // Daily Safety Tips Array (Hindi)
+    dailyTips: [
+      "कभी भी किसी के साथ ओटीपी (OTP) साझा न करें — बैंक कभी भी इन्हें नहीं मांगते हैं।",
+      "लॉगिन विवरण दर्ज करने से पहले हमेशा वेबसाइट यूआरएल (URL) की जांच करें।",
+      "अलग-अलग खातों के लिए अलग-अलग पासवर्ड का उपयोग करें।",
+      "अज्ञात संदेशों या ईमेल से लिंक पर क्लिक न करें।",
+      "जहां भी संभव हो टू-फैक्टर ऑथेंटिकेशन (2FA) सक्षम करें।",
+      "वित्तीय साइबर अपराधों की तुरंत 1930 पर रिपोर्ट करें।",
+      "बैंकिंग जैसे संवेदनशील लेनदेन के लिए सार्वजनिक वाई-फाई का उपयोग करने से बचें।",
+      "अपने फोन और कंप्यूटर ऑपरेटिंग सिस्टम को अपडेट रखें।",
+      "तत्काल धन हस्तांतरण की मांग करने वाले तत्काल संदेशों से सावधान रहें।",
+      "अप्रत्याशित मित्र अनुरोधों की पुष्टि करें, भले ही वे किसी ऐसे व्यक्ति से हों जिसे आप जानते हैं।",
+      "अक्षरों, संख्याओं और विशेष वर्णों के मिश्रण वाले मजबूत पासवर्ड का उपयोग करें।",
+      "आधिकारिक ऐप स्टोर के बाहर से ऐप डाउनलोड न करें।",
+      "नियमित रूप से अपने महत्वपूर्ण डेटा का बैकअप लें।",
+      "जब आप अपने डिवाइस को उपयोग नहीं कर रहे हों तो अपनी स्क्रीन को लॉक करें।",
+      "नियमित रूप से अपने सोशल मीडिया खातों पर गोपनीयता सेटिंग्स की समीक्षा करें।",
+      "पैसे प्राप्त करने के लिए रैंडम क्यूआर (QR) कोड स्कैन न करें; आप केवल भुगतान करने के लिए स्कैन करते हैं।",
+      "यदि नौकरी के प्रस्ताव में आपको 'पंजीकरण शुल्क' देने की आवश्यकता है, तो यह संभवतः एक घोटाला है।",
+      "अनधिकृत लेनदेन के लिए अपने बैंक विवरणों की नियमित जांच करें।",
+      "ऑनलाइन व्यक्तिगत जानकारी पोस्ट करने से पहले सोचें; इसका उपयोग पहचान की चोरी के लिए किया जा सकता है।",
+      "साझे कंप्यूटर का उपयोग करते समय हमेशा अपने खातों से लॉग आउट करें।"
     ]
   },
   kn: {
@@ -490,6 +673,7 @@ const translations = {
     navLearn: "ಕಲಿಯಿರಿ",
     navQuiz: "ರಸಪ್ರಶ್ನೆ",
     navScenarios: "ಸನ್ನಿವೇಶಗಳು",
+    navParents: "ಪೋಷಕರು",
     navHelp: "ಸಹಾಯ",
     themeToggle: "ಥೀಮ್ ಬದಲಾಯಿಸಿ",
     greetMorning: "ಶುಭೋದಯ",
@@ -508,8 +692,11 @@ const translations = {
     bullDesc: "ಆನ್‌ಲೈನ್ ಕಿರುಕುಳವನ್ನು ನಿಲ್ಲಿಸುವುದು ಮತ್ತು ಸುರಕ್ಷಿತ ಡಿಜಿಟಲ್ ಜಾಗವನ್ನು ಹೇಗೆ ಉತ್ತೇಜಿಸುವುದು ಎಂಬುದನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.",
     privTitle: "ಗೌಪ್ಯತೆ ರಕ್ಷಣೆ",
     privDesc: "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಮತ್ತು ವೆಬ್‌ಸೈಟ್‌ಗಳಾದ್ಯಂತ ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ನಿರ್ವಹಿಸಿ.",
+    parentsCardTitle: "ಪೋಷಕರಿಗೆ ಸೈಬರ್ ಸುರಕ್ಷತೆ",
+    parentsCardDesc: "ಮಕ್ಕಳು ಎದುರಿಸುತ್ತಿರುವ ಆನ್‌ಲೈನ್ ಅಪಾಯಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಪೋಷಕರಿಗೆ ಸಹಾಯ ಮಾಡಿ ಮತ್ತು ಸುರಕ್ಷಿತ ಮತ್ತು ಜವಾಬ್ದಾರಿಯುತ ಇಂಟರ್ನೆಟ್ ಬಳಕೆಯಲ್ಲಿ ಅವರಿಗೆ ಹೇಗೆ ಮಾರ್ಗದರ್ಶನ, ರಕ್ಷಣೆ ಮತ್ತು ಬೆಂಬಲ ನೀಡುವುದು ಎಂಬುದನ್ನು ಕಲಿಯಿರಿ.",
+    parentsBadge: "ಪೋಷಕರಿಗಾಗಿ",
     helpTitle: "ಅಧಿಕೃತ ಸೈಬರ್ ಕ್ರೈಮ್ ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲ (ಭಾರತ)",
-    helpSub: "ಭಾರತ ಸರ್ಕಾರದ ಅಧಿಕೃತ ಸಂಪನ್ಮೂಲಗಳು",
+    helpSub: "ಅಧಿಕೃತ ಭಾರತ ಸರ್ಕಾರದ ಸಂಪನ್ಮೂಲಗಳು",
     helpCall: "ಕರೆ ಮಾಡಿ 1930 (ಭಾರತ)",
     helpWarn: "ಭೌತಿಕ ತುರ್ತು ಪರಿಸ್ಥಿತಿಗಳಿಗಾಗಿ, ಸ್ಥಳೀಯ ತುರ್ತು ಸೇವೆಗಳನ್ನು ಸಂಪರ್ಕಿಸಿ (ಪೊಲೀಸ್: 100).",
     helpDisc: "ಸೈಬರ್‌ಸೇಫ್ ಇಂಡಿಯಾ (CyberSafe India) ಒಂದು ಸ್ವತಂತ್ರ ಸಾರ್ವಜನಿಕ ಜಾಗೃತಿ ಉಪಕ್ರಮವಾಗಿದೆ. ಇದು ಭಾರತ ಸರ್ಕಾರ ಅಥವಾ ಯಾವುದೇ ಕಾನೂನು ಜಾರಿ ಸಂಸ್ಥೆಯೊಂದಿಗೆ ಸಂಯೋಜಿತವಾಗಿಲ್ಲ ಅಥವಾ ಅನುಮೋದಿಸಲ್ಪಟ್ಟಿಲ್ಲ.",
@@ -617,8 +804,72 @@ const translations = {
     scenario_go_learn: "ಕಲಿಯಲು ಹೋಗಿ",
     scenario_restart: "ಮರುಪ್ರಾರಂಭಿಸಿ",
     scenarioProgress: "ಸನ್ನಿವೇಶ {current} ರ {total}",
+    scenarioProgress: "ಸನ್ನಿವೇಶ {current} ರ {total}",
     scenarioFeedbackSafe: "ಸುರಕ್ಷಿತ ಆಯ್ಕೆ!",
     scenarioFeedbackRisky: "ಅಪಾಯಕಾರಿ ಕ್ರಮ!",
+
+    // Daily Tips Static
+    tipOfDayTitle: "ಇಂದಿನ ಸೈಬರ್ ಸುರಕ್ಷತೆಯ ಸಲಹೆ",
+    yesterdayTipTitle: "ನಿನ್ನೆಯ ಸಲಹೆ",
+    shareTipBtn: "ಸಲಹೆ ಹಂಚಿಕೊಳ್ಳಿ",
+    viewAllTipsBtn: "ಎಲ್ಲಾ ಸಲಹೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+    shareTipSuccess: "ಸಲಹೆಯನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ!",
+    shareTipError: "ಸಲಹೆಯನ್ನು ನಕಲಿಸಲಾಗಲಿಲ್ಲ.",
+    shareTipText: "CyberSafe India ನಿಂದ ಸೈಬರ್ ಸುರಕ್ಷತೆಯ ಸಲಹೆ: ",
+    allTipsTitle: "ಸೈಬರ್ ಭದ್ರತಾ ಸಲಹೆಗಳು",
+    allTipsSubtitle: "ದೈನಂದಿನ ಜಾಗೃತಿ ಮಾರ್ಗಸೂಚಿಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿ.",
+    printBtn: "ಪ್ರಿಂಟ್ / ಪಿಡಿಎಫ್ ಸೇವ್ ಮಾಡಿ",
+    loadingTips: "ಸಲಹೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...",
+
+    // Cyber Safety for Parents Section
+    parents_title: "ಪೋಷಕರಿಗೆ ಸೈಬರ್ ಸುರಕ್ಷತೆ",
+    parents_desc: "ಮಕ್ಕಳು ಸುರಕ್ಷಿತವಾಗಿ, ಜವಾಬ್ದಾರಿಯುತವಾಗಿ ಮತ್ತು ವಿಶ್ವಾಸದಿಂದ ಇಂಟರ್ನೆಟ್ ಬಳಸಲು ಸಹಾಯ ಮಾಡಲು ಪೋಷಕರಿಗೆ ಮಾರ್ಗದರ್ಶನ.",
+    parents_risks_title: "ಹೈಲೈಟ್ ಮಾಡಲು ಸಾಮಾನ್ಯ ಅಪಾಯಗಳು",
+    parents_risk_1: "ಆನ್‌ಲೈನ್ ಪರಭಕ್ಷಕರು (Online predators)",
+    parents_risk_2: "ಸೈಬರ್‌ಬುಲ್ಲಿಂಗ್ (Cyberbullying)",
+    parents_risk_3: "ಅನುಚಿತ ವಿಷಯ",
+    parents_risk_4: "ಗೇಮಿಂಗ್ ಮತ್ತು ಚಾಟ್ ಆಧಾರಿತ ಹಗರಣಗಳು",
+    parents_risk_5: "ಸಾಮಾಜಿಕ ಜಾಲತಾಣದ ಒತ್ತಡ",
+    parents_best_practices: "ಉತ್ತಮ ಅಭ್ಯಾಸಗಳು: ಪೋಷಕರು ಮಾಡಬೇಕಾದದ್ದು ಮತ್ತು ಮಾಡಬಾರದು",
+    parents_do_title: "ಮಾಡಬೇಕಾದದ್ದು:",
+    parents_do_1: "ಆನ್‌ಲೈನ್ ಚಟುವಟಿಕೆಗಳ ಬಗ್ಗೆ ಮಕ್ಕಳೊಂದಿಗೆ ಮುಕ್ತವಾಗಿ ಮಾತನಾಡಿ",
+    parents_do_2: "ವಯಸ್ಸಿಗೆ ಸೂಕ್ತವಾದ ಗೌಪ್ಯತೆ ಮತ್ತು ಪೋಷಕರ ನಿಯಂತ್ರಣಗಳನ್ನು ಹೊಂದಿಸಿ",
+    parents_do_3: "ಅಹಿತಕರ ಆನ್‌ಲೈನ್ ನಡವಳಿಕೆಯನ್ನು ವರದಿ ಮಾಡಲು ಮಕ್ಕಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+    parents_do_4: "ಸ್ಕ್ರೀನ್ ಸಮಯ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಬಳಕೆಯನ್ನು ಜವಾಬ್ದಾರಿಯುತವಾಗಿ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ",
+    parents_do_5: "ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಅಥವಾ ಒಟಿಪಿಗಳನ್ನು ಎಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳದಂತೆ ಮಕ್ಕಳಿಗೆ ಕಲಿಸಿ",
+    parents_dont_title: "ಮಾಡಬಾರದು:",
+    parents_dont_1: "ಮಗುವಿನ ಆನ್‌ಲೈನ್ ನಡವಳಿಕೆಯ ಬದಲಾವಣೆಗಳನ್ನು ನಿರ್ಲಕ್ಷಿಸಬೇಡಿ",
+    parents_dont_2: "ಒಪ್ಪಿಗೆಯಿಲ್ಲದೆ ಮಕ್ಕಳ ವೈಯಕ್ತಿಕ ಫೋಟೋಗಳನ್ನು ಸಾರ್ವಜನಿಕವಾಗಿ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ",
+    parents_dont_3: "ಅಪರಿಚಿತ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಅಥವಾ ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಅನಿಯಂತ್ರಿತ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಬೇಡಿ",
+    parents_dont_4: "ಶಿಕ್ಷಣ ನೀಡುವ ಬದಲು ಇಂಟರ್ನೆಟ್ ಬಗ್ಗೆ ಮಕ್ಕಳನ್ನು ಹೆದರಿಸಬೇಡಿ",
+    parents_dont_5: "ಆನ್‌ಲೈನ್ ಬೆದರಿಸುವಿಕೆಯನ್ನು ನಿರುಪದ್ರವಿ ಎಂದು ತಳ್ಳಿಹಾಕಬೇಡಿ",
+    parents_help_title: "ಸಹಾಯ ಮತ್ತು ವರದಿ ಮಾಡುವಿಕೆ:",
+    parents_help_desc: "ನಿಮ್ಮ ಮಗು ಆನ್‌ಲೈನ್ ನಿಂದನೆ, ಸೈಬರ್‌ಬುಲ್ಲಿಂಗ್ ಅಥವಾ ಹಗರಣಗಳನ್ನು ಎದುರಿಸಿದರೆ, ಪುರಾವೆಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಅಧಿಕೃತ ಚಾನೆಲ್‌ಗಳ ಮೂಲಕ ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ.",
+    parents_help_1: "ರಾಷ್ಟ್ರೀಯ ಸೈಬರ್ ಕ್ರೈಮ್ ಸಹಾಯವಾಣಿ: 1930",
+    parents_help_2: "cybercrime.gov.in",
+    parents_conv_title: "ಆನ್‌ಲೈನ್ ಸುರಕ್ಷತೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಮಗುವಿನೊಂದಿಗೆ ಮಾತನಾಡುವುದು",
+    parents_conv_1: "ಮುಕ್ತ ಮತ್ತು ಪ್ರಾಮಾಣಿಕ ಸಂಭಾಷಣೆಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+    parents_conv_2: "ಯಾವುದೇ ತೀರ್ಪು ಅಥವಾ ಕೋಪವಿಲ್ಲದೆ ಆಲಿಸಿ",
+    parents_conv_3: "ಅವರು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಸಂವಹನ ನಡೆಸುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು, ಆಟಗಳು ಮತ್ತು ಸ್ನೇಹಿತರ ಬಗ್ಗೆ ಕೇಳಿ",
+    parents_conv_4: "ಸರಳ ಮತ್ತು ವಯಸ್ಸಿಗೆ ಸೂಕ್ತವಾದ ಭಾಷೆಯಲ್ಲಿ ಆನ್‌ಲೈನ್ ಅಪಾಯಗಳನ್ನು ವಿವರಿಸಿ",
+    parents_conv_5: "ಸಮಸ್ಯೆಗಳನ್ನು ಭಯವಿಲ್ಲದೆ ವರದಿ ಮಾಡಬಹುದೆಂದು ಮಕ್ಕಳಿಗೆ ಭರವಸೆ ನೀಡಿ",
+    parents_conv_6: "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಏನಾದರೂ ಅಹಿತಕರವೆನಿಸಿದರೆ ಏನು ಮಾಡಬೇಕೆಂದು ಚರ್ಚಿಸಿ",
+    parents_age_title: "ವಯಸ್ಸಿಗೆ ತಕ್ಕಂತೆ ಆನ್‌ಲೈನ್ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶನ",
+    parents_age_8_12: "ವಯಸ್ಸು 8-12",
+    age_8_12_1: "ಪೋಷಕರ ನಿಯಂತ್ರಣಗಳು ಮತ್ತು ಮೇಲ್ವಿಚಾರಣೆಯ ಬ್ರೌಸಿಂಗ್ ಬಳಸಿ",
+    age_8_12_2: "ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳದಂತೆ ಮಕ್ಕಳಿಗೆ ಕಲಿಸಿ",
+    age_8_12_3: "ಸ್ಕ್ರೀನ್ ಸಮಯ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಮಿತಿಗೊಳಿಸಿ",
+    age_8_12_4: "ಆಟಗಳು ಮತ್ತು ಚಾಟ್ ವೈಶಿಷ್ಟ್ಯಗಳಲ್ಲಿ ಸುರಕ್ಷಿತ ನಡವಳಿಕೆಯನ್ನು ವಿವರಿಸಿ",
+    parents_age_13_16: "ವಯಸ್ಸು 13-16",
+    age_13_16_1: "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮದ ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಚರ್ಚಿಸಿ",
+    age_13_16_2: "ಸೈಬರ್‌ಬುಲ್ಲಿಂಗ್ ಮತ್ತು ಗೆಳೆಯರ ಒತ್ತಡದ ಬಗ್ಗೆ ಮಾತನಾಡಿ",
+    age_13_16_3: "ಬಲವಾದ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಮತ್ತು ಖಾತೆ ಭದ್ರತೆಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+    age_13_16_4: "ಫೋಟೋಗಳು ಅಥವಾ ವೈಯಕ್ತಿಕ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳುವ ಅಪಾಯಗಳನ್ನು ವಿವರಿಸಿ",
+    parents_age_17plus: "ವಯಸ್ಸು 17+",
+    age_17_1: "ಡಿಜಿಟಲ್ ಹೆಜ್ಜೆಗುರುತು ಮತ್ತು ಆನ್‌ಲೈನ್ ಪ್ರತಿಷ್ಠೆಯನ್ನು ಚರ್ಚಿಸಿ",
+    age_17_2: "ಆನ್‌ಲೈನ್ ಹಗರಣಗಳು ಮತ್ತು ಫಿಶಿಂಗ್ ಬಗ್ಗೆ ಶಿಕ್ಷಣ ನೀಡಿ",
+    age_17_3: "ಜವಾಬ್ದಾರಿಯುತ ಸಾಮಾಜಿಕ ಪರಿಣಾಮವನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+    age_17_4: "ಸುರಕ್ಷಿತ ಆನ್‌ಲೈನ್ ವಹಿವಾಟುಗಳು ಮತ್ತು ಡೇಟಾ ರಕ್ಷಣೆಯನ್ನು ಕಲಿಸಿ",
 
     // Quiz Data Array
     quizData: [
@@ -724,6 +975,30 @@ const translations = {
         correct: 1,
         explanation: "ಓಪನ್ ಸಾರ್ವಜನಿಕ ವೈ-ಫೈ ನೆಟ್‌ವರ್ಕ್‌ಗಳು 'ಮ್ಯಾನ್-ಇನ್-ದ-ಮಿಡ್ಲ್' (Man-in-the-Middle) ದಾಳಿಗೆ ಗುರಿಯಾಗಬಹುದು. ಸೂಕ್ಷ್ಮ ವಹಿವಾಟುಗಳಿಗಾಗಿ ನಿಮ್ಮ ಸ್ವಂತ ಸೆಲ್ಯುಲಾರ್ ಡೇಟಾವನ್ನು ಬಳಸುವುದು ಸುರಕ್ಷಿತವಾಗಿದೆ. ಇನ್‌ಕಾಗ್ನಿಟೊ ಮೋಡ್ ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡುವುದಿಲ್ಲ."
       }
+    ],
+
+    // Daily Safety Tips Array (Kannada)
+    dailyTips: [
+      "OTP ಗಳನ್ನು ಎಂದಿಗೂ ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ - ಬ್ಯಾಂಕ್‌ಗಳು ಎಂದಿಗೂ ಅವುಗಳನ್ನು ಕೇಳುವುದಿಲ್ಲ.",
+      "ಲಾಗಿನ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸುವ ಮೊದಲು ಯಾವಾಗಲೂ ವೆಬ್‌ಸೈಟ್ URL ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
+      "ವಿವಿಧ ಖಾತೆಗಳಿಗೆ ವಿಭಿನ್ನ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ಬಳಸಿ.",
+      "ಅಜ್ಞಾತ ಸಂದೇಶಗಳು ಅಥವಾ ಇಮೇಲ್‌ಗಳಿಂದ ಲಿಂಕ್‌ಗಳನ್ನು ಕ್ಲಿಕ್ ಮಾಡಬೇಡಿ.",
+      "ಸಾಧ್ಯವಾದಲ್ಲೆಲ್ಲಾ ಟು-ಫ್ಯಾಕ್ಟರ್ ಆಥೆಂಟಿಕೇಶನ್ (2FA) ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+      "ಹಣಕಾಸಿನ ಸೈಬರ್ ಅಪರಾಧಗಳನ್ನು ತಕ್ಷಣವೇ 1930 ಗೆ ವರದಿ ಮಾಡಿ.",
+      "ಬ್ಯಾಂಕಿಂಗ್‌ನಂತಹ ಸೂಕ್ಷ್ಮ ವಹಿವಾಟುಗಳಿಗಾಗಿ ಸಾರ್ವಜನಿಕ ವೈ-ಫೈ ಬಳಸುವುದನ್ನು ತಪ್ಪಿಸಿ.",
+      "ನಿಮ್ಮ ಫೋನ್ ಮತ್ತು ಕಂಪ್ಯೂಟರ್ ಆಪರೇಟಿಂಗ್ ಸಿಸ್ಟಂಗಳನ್ನು ನವೀಕೃತವಾಗಿರಿಸಿ.",
+      "ತಕ್ಷಣದ ಹಣ ವರ್ಗಾವಣೆಗೆ ಒತ್ತಾಯಿಸುವ ತುರ್ತು ಸಂದೇಶಗಳ ಬಗ್ಗೆ ಎಚ್ಚರದಿಂದಿರಿ.",
+      "ಅನಿರೀಕ್ಷಿತ ಸ್ನೇಹಿತರ ವಿನಂತಿಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಅವರು ನಿಮಗೆ ತಿಳಿದಿರುವವರಿಂದ ಬಂದಂತೆ ತೋರಿದರೂ ಸಹ.",
+      "ಅಕ್ಷರಗಳು, ಸಂಖ್ಯೆಗಳು ಮತ್ತು ವಿಶೇಷ ಅಕ್ಷರಗಳ ಮಿಶ್ರಣದೊಂದಿಗೆ ಬಲವಾದ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ಬಳಸಿ.",
+      "ಅಧಿಕೃತ ಅಪ್ಲಿಕೇಶನ್ ಸ್ಟೋರ್‌ಗಳ ಹೊರಗಿನಿಂದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬೇಡಿ.",
+      "ನಿಮ್ಮ ಪ್ರಮುಖ ಡೇಟಾವನ್ನು ನಿಯಮಿತವಾಗಿ ಬ್ಯಾಕ್‌ಅಪ್ ಮಾಡಿ.",
+      "ನಿಮ್ಮ ಸಾಧನವನ್ನು ಗಮನಿಸದೆ ಬಿಟ್ಟಾಗ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಲಾಕ್ ಮಾಡಿ.",
+      "ನಿಮ್ಮ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಖಾತೆಗಳಲ್ಲಿ ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+      "ಹಣವನ್ನು ಸ್ವೀಕರಿಸಲು ಯಾದೃಚ್ಛಿಕ QR ಕೋಡ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಬೇಡಿ; ನೀವು ಪಾವತಿಸಲು ಮಾತ್ರ ಸ್ಕ್ಯಾನ್ ಮಾಡುತ್ತೀರಿ.",
+      "ಉದ್ಯೋಗದ ಪ್ರಸ್ತಾಪವು ನೀವು 'ನೋಂದಣಿ ಶುಲ್ಕ'ವನ್ನು ಪಾವತಿಸುವಂತೆ ಕೇಳಿದರೆ, ಅದು ಹಗರಣವಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ.",
+      "ಅನಧಿಕೃತ ವಹಿವಾಟುಗಳಿಗಾಗಿ ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಹೇಳಿಕೆಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
+      "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡುವ ಮೊದಲು ಯೋಚಿಸಿ; ಗುರುತಿನ ಕಳ್ಳತನಕ್ಕೆ ಇದನ್ನು ಬಳಸಬಹುದು.",
+      "ಸಾರ್ವಜನಿಕ ಕಂಪ್ಯೂಟರ್ ಬಳಸುವಾಗ ಯಾವಾಗಲೂ ನಿಮ್ಮ ಖಾತೆಗಳಿಂದ ಲಾಗ್‌ಔಟ್ ಮಾಡಿ."
     ]
   }
 };
@@ -732,6 +1007,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLanguage();
   initGreeting();
+  initDailyTip();
   initMobileMenu();
   if (document.getElementById('password-input')) {
     initPasswordAnalyzer();
@@ -743,19 +1019,63 @@ function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
   if (!toggleBtn) return;
 
-  // Check saved theme or system preference
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+  function updateThemeAriaTags(theme) {
+    if (theme === 'dark') {
+      toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      toggleBtn.setAttribute('title', 'Switch to light mode');
+    } else if (theme === 'high-contrast') {
+      toggleBtn.setAttribute('aria-label', 'Disable high contrast mode');
+      toggleBtn.setAttribute('title', 'Disable high contrast mode');
+    } else {
+      toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      toggleBtn.setAttribute('title', 'Switch to dark mode');
+    }
   }
 
-  toggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  // Determine Default Theme
+  let initialTheme = 'light';
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme) {
+    initialTheme = savedTheme;
+  } else if (systemPrefersDark) {
+    initialTheme = 'dark';
+  }
+
+  // Apply Initial Theme Without Animating
+  document.documentElement.setAttribute('data-theme', initialTheme);
+  updateThemeAriaTags(initialTheme);
+
+  // Click handler (Toggles between Light / Dark)
+  toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // If currently high-contrast, a regular click returns to standard light/dark
+    let currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    let newTheme;
+
+    if (currentTheme === 'high-contrast') {
+      newTheme = systemPrefersDark ? 'dark' : 'light'; // Reset to base preference
+    } else {
+      newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    }
+
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    updateThemeAriaTags(newTheme);
+  });
+
+  // Long press / Right-click Handler (Toggles High Contrast)
+  toggleBtn.addEventListener('contextmenu', (e) => {
+    e.preventDefault(); // Prevent standard right-click menu
+
+    let currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    let newTheme = currentTheme === 'high-contrast' ? (systemPrefersDark ? 'dark' : 'light') : 'high-contrast';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeAriaTags(newTheme);
   });
 }
 
@@ -773,6 +1093,7 @@ function initLanguage() {
     localStorage.setItem('lang', lang);
     applyTranslations(lang);
     updateGreeting(lang); // Re-run greeting to translate it
+    if (typeof updateDailyTip === 'function') updateDailyTip(lang);
   });
 }
 
@@ -821,6 +1142,73 @@ function updateGreeting(lang) {
   greetingEl.style.animation = 'none';
   greetingEl.offsetHeight; // trigger reflow
   greetingEl.style.animation = null;
+}
+
+// --- Daily Tip Logic ---
+function initDailyTip() {
+  const lang = localStorage.getItem('lang') || 'en';
+  updateDailyTip(lang);
+
+  const shareBtn = document.getElementById('share-tip-btn');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', () => shareDailyTip());
+  }
+}
+
+function updateDailyTip(lang) {
+  const tipTextEl = document.getElementById('daily-tip-text');
+  const yesterdayTipEl = document.getElementById('yesterday-tip-text');
+  if (!tipTextEl) return;
+
+  const t = translations[lang] || translations['en'];
+  const tips = t.dailyTips;
+
+  if (!tips || tips.length === 0) return;
+
+  // Use the current date to select a tip
+  // This ensures the tip only changes once per day and doesn't repeat until the array is exhausted
+  const today = new Date();
+  const daysSinceEpoch = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
+
+  const tipIndex = daysSinceEpoch % tips.length;
+  tipTextEl.textContent = tips[tipIndex];
+
+  // Calculate Yesterday's tip
+  if (yesterdayTipEl) {
+    // Adding tips.length before modulo ensures we don't get a negative index if daysSinceEpoch is somehow small
+    const yesterdayIndex = (daysSinceEpoch - 1 + tips.length) % tips.length;
+    yesterdayTipEl.textContent = tips[yesterdayIndex];
+  }
+}
+
+function shareDailyTip() {
+  const lang = localStorage.getItem('lang') || 'en';
+  const t = translations[lang] || translations['en'];
+  const tipText = document.getElementById('daily-tip-text')?.textContent;
+
+  if (!tipText) return;
+
+  const shareText = (t.shareTipText || "Cyber Safety Tip from CyberSafe India: ") + tipText + "\n\nLearn more at: " + window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: 'CyberSafe India Tip',
+      text: shareText
+    }).catch(err => {
+      console.log('Error sharing:', err); // Ignore user cancellation errors
+    });
+  } else {
+    // Fallback: Copy to clipboard
+    navigator.clipboard.writeText(shareText).then(() => {
+      const originalText = document.getElementById('share-tip-btn').innerHTML;
+      document.getElementById('share-tip-btn').innerHTML = `<span>✅</span> <span>${t.shareTipSuccess || "Copied!"}</span>`;
+      setTimeout(() => {
+        document.getElementById('share-tip-btn').innerHTML = originalText;
+      }, 3000);
+    }).catch(err => {
+      alert(t.shareTipError || "Could not copy tip.");
+    });
+  }
 }
 
 // --- Mobile Menu ---

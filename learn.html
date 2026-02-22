@@ -70,6 +70,7 @@
                 <a href="learn.html" class="active" data-i18n="navLearn">Learn</a>
                 <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
                 <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
+                <a href="parents.html" data-i18n="navParents" class="active">Parents</a>
                 <a href="index.html#help" data-i18n="navHelp">Help</a>
                 <div class="nav-controls">
                     <span class="mobile-nav-label">Language</span>
@@ -78,9 +79,29 @@
                         <option value="hi">हिंदी (Hindi)</option>
                         <option value="kn">ಕನ್ನಡ (Kannada)</option>
                     </select>
-                    <span class="mobile-nav-label theme-label-text">Theme: Light / Dark</span>
-                    <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
-                        Theme</button>
+                    <span class="mobile-nav-label theme-label-text" aria-hidden="true"
+                        data-i18n="themeToggleLabel">Theme</span>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                        title="Switch to dark mode">
+                        <svg class="theme-icon" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" class="moon-mask-circle" />
+                            </mask>
+                            <circle class="sun-core" cx="12" cy="12" r="5" mask="url(#moon-mask)" fill="currentColor" />
+                            <g class="sun-rays">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -313,6 +334,8 @@
                     </div>
                 </div>
             </section>
+
+
 
         </div>
     </main>
