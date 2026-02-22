@@ -28,17 +28,18 @@
                 <a href="quiz.html" class="active" data-i18n="navQuiz">Quiz</a>
                 <a href="scenario.html" data-i18n="navScenarios">Scenarios</a>
                 <a href="index.html#help" data-i18n="navHelp">Help</a>
+                <div class="nav-controls">
+                    <span class="mobile-nav-label">Language</span>
+                    <select id="lang-select" class="lang-select" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                    <span class="mobile-nav-label theme-label-text">Theme: Light / Dark</span>
+                    <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
+                        Theme</button>
+                </div>
             </nav>
-
-            <div class="nav-controls">
-                <select id="lang-select" class="lang-select" aria-label="Select Language">
-                    <option value="en">English</option>
-                    <option value="hi">हिंदी (Hindi)</option>
-                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
-                </select>
-                <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
-                    Theme</button>
-            </div>
         </div>
     </header>
 
@@ -53,7 +54,8 @@
                     <h2 data-i18n="quiz_completed">Quiz Completed!</h2>
                     <p class="hero-subtitle" style="margin-top: 1rem;"><span data-i18n="quiz_score">Your Score:</span>
                         <strong id="score-display">0</strong>
-                        / <span id="total-display">0</span></p>
+                        / <span id="total-display">0</span>
+                    </p>
                     <button class="btn btn-primary" data-i18n="quiz_retake" onclick="location.reload()"
                         style="margin-top: 1rem;">Retake
                         Quiz</button>
@@ -64,7 +66,8 @@
                     <div
                         style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: var(--color-text-muted);">
                         <span id="q-progress">Question 1 of 5</span>
-                        <span><span data-i18n="quiz_current_score">Score:</span> <span id="current-score">0</span></span>
+                        <span><span data-i18n="quiz_current_score">Score:</span> <span
+                                id="current-score">0</span></span>
                     </div>
 
                     <div class="question-block">

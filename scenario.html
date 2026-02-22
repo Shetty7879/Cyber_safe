@@ -38,17 +38,18 @@
                 <a href="quiz.html" data-i18n="navQuiz">Quiz</a>
                 <a href="scenario.html" class="active" data-i18n="navScenarios">Scenarios</a>
                 <a href="index.html#help" data-i18n="navHelp">Help</a>
+                <div class="nav-controls">
+                    <span class="mobile-nav-label">Language</span>
+                    <select id="lang-select" class="lang-select" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                    <span class="mobile-nav-label theme-label-text">Theme: Light / Dark</span>
+                    <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
+                        Theme</button>
+                </div>
             </nav>
-
-            <div class="nav-controls">
-                <select id="lang-select" class="lang-select" aria-label="Select Language">
-                    <option value="en">English</option>
-                    <option value="hi">हिंदी (Hindi)</option>
-                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
-                </select>
-                <button id="theme-toggle" class="theme-toggle" data-i18n="themeToggle" aria-label="Toggle Theme">◐
-                    Theme</button>
-            </div>
         </div>
     </header>
 
@@ -69,7 +70,8 @@
                 </div>
 
                 <div class="question-block">
-                    <h3 id="scenario-title" data-i18n="scenario_loading" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                    <h3 id="scenario-title" data-i18n="scenario_loading"
+                        style="font-size: 1.5rem; margin-bottom: 1rem;">
                         Loading scenario...</h3>
 
                     <div id="scenario-desc" class="scenario-box">
