@@ -1212,7 +1212,7 @@ function updateGreeting(lang) {
   const hour = new Date().getHours();
   //  Morning (5:00–11:59), Afternoon (12:00–16:59), Evening (17:00–23:59/4:59)
   let greetingKey = 'greetEvening';
-  let emoji = '🌙';
+  let emoji = '🌇';
   if (hour >= 5 && hour < 12) {
     greetingKey = 'greetMorning';
     emoji = '🌅';
@@ -1680,7 +1680,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // All accordions should be default closed per user request.
+  // Note: Ages 8-12 is open by default.
 });
 
 // --- Inject Age-Wise Translations ---

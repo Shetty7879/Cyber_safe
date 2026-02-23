@@ -647,7 +647,7 @@ button {
   font-size: 1.125rem;
   padding: 1rem 2rem;
   border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 /* BLOCK 2: LINKS */
@@ -1074,7 +1074,7 @@ button {
   }
 
   .greeting-text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .hero-title {
