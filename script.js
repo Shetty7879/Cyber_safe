@@ -333,7 +333,33 @@ const translations = {
       "Check your bank statements regularly for unauthorized transactions.",
       "Think before you post personal information online; it can be used for identity theft.",
       "Always log out of your accounts when using a shared or public computer."
-    ]
+    ],
+
+    // New Parent Section Translations
+    parents_conv_starters_title: "Talk to Your Child – Conversation Starters",
+    parents_conv_starters_desc: "Use these supportive, open-ended questions to check in on their digital lives without causing them to become defensive:",
+    conv_start_1: "What’s your favorite app or game right now? Can you show me how it works?",
+    conv_start_2: "Have you or your friends ever seen anything online that made you feel upset or weird?",
+    conv_start_3: "How do you decide what rules to follow when talking to people online?",
+    conv_start_4: "If someone was being mean to you online, what would you do?",
+    parents_warning_title: "Warning Signs to Watch For",
+    parents_warning_desc: "Sudden behavioral changes can indicate that a child is experiencing cyberbullying, grooming, or exposure to inappropriate content. Watch for:",
+    warning_sign_1: "Suddenly turning off the screen or hiding the device when a parent walks in.",
+    warning_sign_2: "Reluctance to go to school or participate in social activities.",
+    warning_sign_3: "Withdrawing from family, friends, or usual hobbies.",
+    warning_sign_4: "Unexplained mood swings, anger, or sadness after using devices.",
+    warning_sign_5: "Receiving unexpected gifts, packages, or calls from unknown numbers.",
+    parents_what_to_do_title: "What Parents Should Do If Something Goes Wrong",
+    what_to_do_step1_title: "Stay Calm and Listen",
+    what_to_do_step1_desc: "Do not get angry or blame the child. Reacting negatively might make them hide future issues. Listen to their whole story.",
+    what_to_do_step2_title: "Preserve Evidence",
+    what_to_do_step2_desc: "Take screenshots, save messages, emails, and URLs. Do not delete the abusive content immediately as it serves as proof.",
+    what_to_do_step3_title: "Block and Report",
+    what_to_do_step3_desc: "Block the offending user on the platform. Use built-in reporting tools on the social media, game, or app.",
+    what_to_do_step4_title: "Seek Official Support",
+    what_to_do_step4_desc: "If the child is threatened or scammed, report it to the National Cyber Crime portal or call the official helpline.",
+    btn_print_dos_donts: "Print Do's & Don'ts",
+    btn_download_guide: "Download Parent Safety Guide (PDF)"
   },
   hi: {
     navHome: "होम",
@@ -666,7 +692,33 @@ const translations = {
       "अनधिकृत लेनदेन के लिए अपने बैंक विवरणों की नियमित जांच करें।",
       "ऑनलाइन व्यक्तिगत जानकारी पोस्ट करने से पहले सोचें; इसका उपयोग पहचान की चोरी के लिए किया जा सकता है।",
       "साझे कंप्यूटर का उपयोग करते समय हमेशा अपने खातों से लॉग आउट करें।"
-    ]
+    ],
+
+    // New Parent Section Translations
+    parents_conv_starters_title: "अपने बच्चे से बात करें - बातचीत की शुरुआत",
+    parents_conv_starters_desc: "उनके डिजिटल जीवन के बारे में जानने के लिए इन सहायक, खुले प्रश्नों का उपयोग करें ताकि वे रक्षात्मक न हों:",
+    conv_start_1: "इस समय आपका पसंदीदा ऐप या गेम कौन सा है? क्या आप मुझे दिखा सकते हैं कि यह कैसे काम करता है?",
+    conv_start_2: "क्या आपने या आपके दोस्तों ने कभी ऑनलाइन कुछ ऐसा देखा है जिससे आपको बुरा या अजीब लगा हो?",
+    conv_start_3: "ऑनलाइन लोगों से बात करते समय आप कैसे तय करते हैं कि किन नियमों का पालन करना है?",
+    conv_start_4: "अगर ऑनलाइन कोई आपके साथ बुरा व्यवहार कर रहा हो, तो आप क्या करेंगे?",
+    parents_warning_title: "ध्यान देने योग्य चेतावनी संकेत",
+    parents_warning_desc: "अचानक व्यवहार में बदलाव यह संकेत दे सकते हैं कि बच्चा साइबरबुलिंग, ग्रूमिंग या अनुचित सामग्री के संपर्क में आ रहा है। इन पर ध्यान दें:",
+    warning_sign_1: "माता-पिता के कमरे में आने पर अचानक स्क्रीन बंद करना या डिवाइस छिपाना।",
+    warning_sign_2: "स्कूल जाने या सामाजिक गतिविधियों में भाग लेने में अनिच्छा।",
+    warning_sign_3: "परिवार, दोस्तों या सामान्य शौक से दूर रहना।",
+    warning_sign_4: "उपकरणों का उपयोग करने के बाद अस्पष्ट मूड स्विंग, क्रोध या उदासी।",
+    warning_sign_5: "अज्ञात नंबरों से अप्रत्याशित उपहार, पैकेज या कॉल प्राप्त करना।",
+    parents_what_to_do_title: "कुछ गलत होने पर माता-पिता को क्या करना चाहिए",
+    what_to_do_step1_title: "शांत रहें और सुनें",
+    what_to_do_step1_desc: "गुस्सा न करें या बच्चे को दोष न दें। नकारात्मक प्रतिक्रिया से वे भविष्य की समस्याओं को छिपा सकते हैं। उनकी पूरी बात सुनें।",
+    what_to_do_step2_title: "सबूत सुरक्षित रखें",
+    what_to_do_step2_desc: "स्क्रीनशॉट लें, संदेश, ईमेल और यूआरएल सहेजें। अपमानजनक सामग्री को तुरंत न हटाएं क्योंकि यह प्रमाण के रूप में कार्य करता है।",
+    what_to_do_step3_title: "ब्लॉक करें और रिपोर्ट करें",
+    what_to_do_step3_desc: "प्लेटफ़ॉर्म पर आपत्तिजनक यूज़र को ब्लॉक करें। सोशल मीडिया, गेम या ऐप पर अंतर्निहित रिपोर्टिंग टूल का उपयोग करें।",
+    what_to_do_step4_title: "आधिकारिक सहायता लें",
+    what_to_do_step4_desc: "यदि बच्चे को धमकी दी गई है या उसके साथ धोखाधड़ी हुई है, तो राष्ट्रीय साइबर अपराध पोर्टल पर इसकी रिपोर्ट करें या आधिकारिक हेल्पलाइन पर कॉल करें।",
+    btn_print_dos_donts: "क्या करें और क्या न करें प्रिंट करें",
+    btn_download_guide: "पेरेंट सेफ्टी गाइड (PDF) डाउनलोड करें"
   },
   kn: {
     navHome: "ಮುಖಪುಟ",
@@ -999,7 +1051,33 @@ const translations = {
       "ಅನಧಿಕೃತ ವಹಿವಾಟುಗಳಿಗಾಗಿ ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಹೇಳಿಕೆಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ.",
       "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡುವ ಮೊದಲು ಯೋಚಿಸಿ; ಗುರುತಿನ ಕಳ್ಳತನಕ್ಕೆ ಇದನ್ನು ಬಳಸಬಹುದು.",
       "ಸಾರ್ವಜನಿಕ ಕಂಪ್ಯೂಟರ್ ಬಳಸುವಾಗ ಯಾವಾಗಲೂ ನಿಮ್ಮ ಖಾತೆಗಳಿಂದ ಲಾಗ್‌ಔಟ್ ಮಾಡಿ."
-    ]
+    ],
+
+    // New Parent Section Translations
+    parents_conv_starters_title: "ನಿಮ್ಮ ಮಗುವಿನೊಂದಿಗೆ ಮಾತನಾಡಿ - ಸಂಭಾಷಣೆ ಪ್ರಾರಂಭಿಸುವ ಪ್ರಶ್ನೆಗಳು",
+    parents_conv_starters_desc: "ಅವರು ರಕ್ಷಣಾತ್ಮಕವಾಗಿ ವರ್ತಿಸದಂತೆ ಅವರ ಡಿಜಿಟಲ್ ಜೀವನದ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಈ ಬೆಂಬಲಿಸುವ, ಮುಕ್ತ ಪ್ರಶ್ನೆಗಳನ್ನು ಬಳಸಿ:",
+    conv_start_1: "ಈಗ ನಿಮ್ಮ ನೆಚ್ಚಿನ ಅಪ್ಲಿಕೇಶನ್ ಅಥವಾ ಆಟ ಯಾವುದು? ಅದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ ಎಂದು ನೀವು ನನಗೆ ತೋರಿಸಬಹುದೇ?",
+    conv_start_2: "ನೀವು ಅಥವಾ ನಿಮ್ಮ ಸ್ನೇಹಿತರು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ನಿಮಗೆ ಬೇಸರ ಅಥವಾ ವಿಚಿತ್ರವೆನಿಸುವ ಯಾವುದನ್ನಾದರೂ ಎಂದಾದರೂ ನೋಡಿದ್ದೀರಾ?",
+    conv_start_3: "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಜನರೊಂದಿಗೆ ಮಾತನಾಡುವಾಗ ಯಾವ ನಿಯಮಗಳನ್ನು ಅನುಸರಿಸಬೇಕು ಎಂದು ನೀವು ಹೇಗೆ ನಿರ್ಧರಿಸುತ್ತೀರಿ?",
+    conv_start_4: "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಯಾರಾದರೂ ನಿಮ್ಮೊಂದಿಗೆ ಕೆಟ್ಟದಾಗಿ ವರ್ತಿಸುತ್ತಿದ್ದರೆ, ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+    parents_warning_title: "ಗಮನಿಸಬೇಕಾದ ಎಚ್ಚರಿಕೆ ಚಿಹ್ನೆಗಳು",
+    parents_warning_desc: "ಹಠಾತ್ ನಡವಳಿಕೆಯ ಬದಲಾವಣೆಗಳು ಮಗು ಸೈಬರ್‌ಬಲ್ಲಿಂಗ್, ಗ್ರೂಮಿಂಗ್ ಅಥವಾ ಸೂಕ್ತವಲ್ಲದ ವಿಷಯಕ್ಕೆ ಒಡ್ಡಿಕೊಳ್ಳುವುದನ್ನು ಸೂಚಿಸಬಹುದು. ಈ ಬಗ್ಗೆ ಗಮನಹರಿಸಿ:",
+    warning_sign_1: "ಪೋಷಕರು ಒಳಬಂದಾಗ ಹಠಾತ್ತನೆ ಪರದೆಯನ್ನು ಆಫ್ ಮಾಡುವುದು ಅಥವಾ ಸಾಧನವನ್ನು ಮರೆಮಾಡುವುದು.",
+    warning_sign_2: "ಶಾಲೆಗೆ ಹೋಗಲು ಅಥವಾ ಸಾಮಾಜಿಕ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಹಿಂಜರಿಕೆ.",
+    warning_sign_3: "ಕುಟುಂಬ, ಸ್ನೇಹಿತರು ಅಥವಾ ಸಾಮಾನ್ಯ ಹವ್ಯಾಸಗಳಿಂದ ದೂರವಿರುವುದು.",
+    warning_sign_4: "ಸಾಧನಗಳನ್ನು ಬಳಸಿದ ನಂತರ ವಿವರಿಸಲಾಗದ ಮನಸ್ಥಿತಿ ಬದಲಾವಣೆಗಳು, ಕೋಪ ಅಥವಾ ದುಃಖ.",
+    warning_sign_5: "ಅಜ್ಞಾತ ಸಂಖ್ಯೆಗಳಿಂದ ಅನಿರೀಕ್ಷಿತ ಉಡುಗೊರೆಗಳು, ಪ್ಯಾಕೇಜ್‌ಗಳು ಅಥವಾ ಕರೆಗಳನ್ನು ಪಡೆಯುವುದು.",
+    parents_what_to_do_title: "ಏನಾದರೂ ತಪ್ಪಾದಲ್ಲಿ ಪೋಷಕರು ಏನು ಮಾಡಬೇಕು",
+    what_to_do_step1_title: "ಶಾಂತವಾಗಿರಿ ಮತ್ತು ಆಲಿಸಿ",
+    what_to_do_step1_desc: "ಕೋಪಗೊಳ್ಳಬೇಡಿ ಅಥವಾ ಮಗುವನ್ನು ದೂಷಿಸಬೇಡಿ. ನಕಾರಾತ್ಮಕವಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸುವುದರಿಂದ ಅವರು ಭವಿಷ್ಯದ ಸಮಸ್ಯೆಗಳನ್ನು ಮರೆಮಾಡಬಹುದು. ಅವರ ಸಂಪೂರ್ಣ ಕಥೆಯನ್ನು ಆಲಿಸಿ.",
+    what_to_do_step2_title: "ಪುರಾವೆಗಳನ್ನು ಸಂರಕ್ಷಿಸಿ",
+    what_to_do_step2_desc: "ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ, ಸಂದೇಶಗಳು, ಇಮೇಲ್‌ಗಳು ಮತ್ತು URL ಗಳನ್ನು ಉಳಿಸಿ. ನಿಂದನೀಯ ವಿಷಯವನ್ನು ತಕ್ಷಣವೇ ಅಳಿಸಬೇಡಿ ಏಕೆಂದರೆ ಅದು ಪುರಾವೆಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.",
+    what_to_do_step3_title: "ನಿರ್ಬಂಧಿಸಿ ಮತ್ತು ವರದಿ ಮಾಡಿ",
+    what_to_do_step3_desc: "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಆಕ್ಷೇಪಾರ್ಹ ಬಳಕೆದಾರರನ್ನು ನಿರ್ಬಂಧಿಸಿ. ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ, ಆಟ ಅಥವಾ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿರುವ ಅಂತರ್ನಿರ್ಮಿತ ವರದಿ ಸಾಧನಗಳನ್ನು ಬಳಸಿ.",
+    what_to_do_step4_title: "ಅಧಿಕೃತ ಬೆಂಬಲವನ್ನು ಪಡೆಯಿರಿ",
+    what_to_do_step4_desc: "ಮಗುವಿಗೆ ಬೆದರಿಕೆ ಹಾಕಿದ್ದರೆ ಅಥವಾ ವಂಚನೆಗೊಳಗಾಗಿದ್ದರೆ, ರಾಷ್ಟ್ರೀಯ ಸೈಬರ್ ಕ್ರೈಮ್ ಪೋರ್ಟಲ್‌ಗೆ ವರದಿ ಮಾಡಿ ಅಥವಾ ಅಧಿಕೃತ ಸಹಾಯವಾಣಿಗೆ ಕರೆ ಮಾಡಿ.",
+    btn_print_dos_donts: "ಮಾಡಬೇಕಾದದ್ದು ಮತ್ತು ಮಾಡಬಾರದ್ದನ್ನು ಮುದ್ರಿಸಿ",
+    btn_download_guide: "ಪೋಷಕರ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶಿ (PDF) ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
   }
 };
 
@@ -1012,7 +1090,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('password-input')) {
     initPasswordAnalyzer();
   }
+
+  // Initialize Accordions
+  initAccordions();
 });
+
+// --- Accordions (Legacy) ---
+function initAccordions() {
+  // Accordion logic is now handled in the dedicated closure at the end of the script.
+}
 
 // --- Theme Toggling ---
 function initTheme() {
@@ -1505,3 +1591,131 @@ function initScenarios() {
 
   loadScenario();
 }
+
+// --- Added Parent Page Logic & Translations ---
+Object.assign(translations.hi, {
+  parents_conv_starters_title: "अपने बच्चे से बात करें - बातचीत की शुरुआत",
+  parents_conv_starters_desc: "उनके डिजिटल जीवन के बारे में जानने के लिए इन सहायक, खुले प्रश्नों का उपयोग करें ताकि वे रक्षात्मक न हों:",
+  conv_start_1: "इस समय आपका पसंदीदा ऐप या गेम कौन सा है? क्या आप मुझे दिखा सकते हैं कि यह कैसे काम करता है?",
+  conv_start_2: "क्या आपने या आपके दोस्तों ने कभी ऑनलाइन कुछ ऐसा देखा है जिससे आपको बुरा या अजीब लगा हो?",
+  conv_start_3: "ऑनलाइन लोगों से बात करते समय आप कैसे तय करते हैं कि किन नियमों का पालन करना है?",
+  conv_start_4: "अगर ऑनलाइन कोई आपके साथ बुरा व्यवहार कर रहा हो, तो आप क्या करेंगे?",
+  parents_warning_title: "ध्यान देने योग्य चेतावनी संकेत",
+  parents_warning_desc: "अचानक व्यवहार में बदलाव यह संकेत दे सकते हैं कि बच्चा साइबरबुलिंग, ग्रूमिंग या अनुचित सामग्री के संपर्क में आ रहा है। इन पर ध्यान दें:",
+  warning_sign_1: "माता-पिता के कमरे में आने पर अचानक स्क्रीन बंद करना या डिवाइस छिपाना।",
+  warning_sign_2: "स्कूल जाने या सामाजिक गतिविधियों में भाग लेने में अनिच्छा।",
+  warning_sign_3: "परिवार, दोस्तों या सामान्य शौक से दूर रहना।",
+  warning_sign_4: "उपकरणों का उपयोग करने के बाद अस्पष्ट मूड स्विंग, क्रोध या उदासी।",
+  warning_sign_5: "अज्ञात नंबरों से अप्रत्याशित उपहार, पैकेज या कॉल प्राप्त करना।",
+  parents_what_to_do_title: "कुछ गलत होने पर माता-पिता को क्या करना चाहिए",
+  what_to_do_step1_title: "शांत रहें और सुनें",
+  what_to_do_step1_desc: "गुस्सा न करें या बच्चे को दोष न दें। नकारात्मक प्रतिक्रिया से वे भविष्य की समस्याओं को छिपा सकते हैं। उनकी पूरी बात सुनें।",
+  what_to_do_step2_title: "सबूत सुरक्षित रखें",
+  what_to_do_step2_desc: "स्क्रीनशॉट लें, संदेश, ईमेल और यूआरएल सहेजें। अपमानजनक सामग्री को तुरंत न हटाएं क्योंकि यह प्रमाण के रूप में कार्य करता है।",
+  what_to_do_step3_title: "ब्लॉक करें और रिपोर्ट करें",
+  what_to_do_step3_desc: "प्लेटफ़ॉर्म पर आपत्तिजनक यूज़र को ब्लॉक करें। सोशल मीडिया, गेम या ऐप पर अंतर्निहित रिपोर्टिंग टूल का उपयोग करें।",
+  what_to_do_step4_title: "आधिकारिक सहायता लें",
+  what_to_do_step4_desc: "यदि बच्चे को धमकी दी गई है या उसके साथ धोखाधड़ी हुई है, तो राष्ट्रीय साइबर अपराध पोर्टल पर इसकी रिपोर्ट करें या आधिकारिक हेल्पलाइन पर कॉल करें।",
+  btn_print_dos_donts: "क्या करें और क्या न करें प्रिंट करें",
+  btn_download_guide: "पेरेंट सेफ्टी गाइड (PDF) डाउनलोड करें"
+});
+
+Object.assign(translations.kn, {
+  parents_conv_starters_title: "ನಿಮ್ಮ ಮಗುವಿನೊಂದಿಗೆ ಮಾತನಾಡಿ - ಸಂಭಾಷಣೆ ಪ್ರಾರಂಭಿಸುವ ಪ್ರಶ್ನೆಗಳು",
+  parents_conv_starters_desc: "ಅವರು ರಕ್ಷಣಾತ್ಮಕವಾಗಿ ವರ್ತಿಸದಂತೆ ಅವರ ಡಿಜಿಟಲ್ ಜೀವನದ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಈ ಬೆಂಬಲಿಸುವ, ಮುಕ್ತ ಪ್ರಶ್ನೆಗಳನ್ನು ಬಳಸಿ:",
+  conv_start_1: "ಈಗ ನಿಮ್ಮ ನೆಚ್ಚಿನ ಅಪ್ಲಿಕೇಶನ್ ಅಥವಾ ಆಟ ಯಾವುದು? ಅದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ ಎಂದು ನೀವು ನನಗೆ ತೋರಿಸಬಹುದೇ?",
+  conv_start_2: "ನೀವು ಅಥವಾ ನಿಮ್ಮ ಸ್ನೇಹಿತರು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ನಿಮಗೆ ಬೇಸರ ಅಥವಾ ವಿಚಿತ್ರವೆನಿಸುವ ಯಾವುದನ್ನಾದರೂ ಎಂದಾದರೂ ನೋಡಿದ್ದೀರಾ?",
+  conv_start_3: "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಜನರೊಂದಿಗೆ ಮಾತನಾಡುವಾಗ ಯಾವ ನಿಯಮಗಳನ್ನು ಅನುಸರಿಸಬೇಕು ಎಂದು ನೀವು ಹೇಗೆ ನಿರ್ಧರಿಸುತ್ತೀರಿ?",
+  conv_start_4: "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಯಾರಾದರೂ ನಿಮ್ಮೊಂದಿಗೆ ಕೆಟ್ಟದಾಗಿ ವರ್ತಿಸುತ್ತಿದ್ದರೆ, ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+  parents_warning_title: "ಗಮನಿಸಬೇಕಾದ ಎಚ್ಚರಿಕೆ ಚಿಹ್ನೆಗಳು",
+  parents_warning_desc: "ಹಠಾತ್ ನಡವಳಿಕೆಯ ಬದಲಾವಣೆಗಳು ಮಗು ಸೈಬರ್‌ಬಲ್ಲಿಂಗ್, ಗ್ರೂಮಿಂಗ್ ಅಥವಾ ಸೂಕ್ತವಲ್ಲದ ವಿಷಯಕ್ಕೆ ಒಡ್ಡಿಕೊಳ್ಳುವುದನ್ನು ಸೂಚಿಸಬಹುದು. ಈ ಬಗ್ಗೆ ಗಮನಹರಿಸಿ:",
+  warning_sign_1: "ಪೋಷಕರು ಒಳಬಂದಾಗ ಹಠಾತ್ತನೆ ಪರದೆಯನ್ನು ಆಫ್ ಮಾಡುವುದು ಅಥವಾ ಸಾಧನವನ್ನು ಮರೆಮಾಡುವುದು.",
+  warning_sign_2: "ಶಾಲೆಗೆ ಹೋಗಲು ಅಥವಾ ಸಾಮಾಜಿಕ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಹಿಂಜರಿಕೆ.",
+  warning_sign_3: "ಕುಟುಂಬ, ಸ್ನೇಹಿತರು ಅಥವಾ ಸಾಮಾನ್ಯ ಹವ್ಯಾಸಗಳಿಂದ ದೂರವಿರುವುದು.",
+  warning_sign_4: "ಸಾಧನಗಳನ್ನು ಬಳಸಿದ ನಂತರ ವಿವರಿಸಲಾಗದ ಮನಸ್ಥಿತಿ ಬದಲಾವಣೆಗಳು, ಕೋಪ ಅಥವಾ ದುಃಖ.",
+  warning_sign_5: "ಅಜ್ಞಾತ ಸಂಖ್ಯೆಗಳಿಂದ ಅನಿರೀಕ್ಷಿತ ಉಡುಗೊರೆಗಳು, ಪ್ಯಾಕೇಜ್‌ಗಳು ಅಥವಾ ಕರೆಗಳನ್ನು ಪಡೆಯುವುದು.",
+  parents_what_to_do_title: "ಏನಾದರೂ ತಪ್ಪಾದಲ್ಲಿ ಪೋಷಕರು ಏನು ಮಾಡಬೇಕು",
+  what_to_do_step1_title: "ಶಾಂತವಾಗಿರಿ ಮತ್ತು ಆಲಿಸಿ",
+  what_to_do_step1_desc: "ಕೋಪಗೊಳ್ಳಬೇಡಿ ಅಥವಾ ಮಗುವನ್ನು ದೂಷಿಸಬೇಡಿ. ನಕಾರಾತ್ಮಕವಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸುವುದರಿಂದ ಅವರು ಭವಿಷ್ಯದ ಸಮಸ್ಯೆಗಳನ್ನು ಮರೆಮಾಡಬಹುದು. ಅವರ ಸಂಪೂರ್ಣ ಕಥೆಯನ್ನು ಆಲಿಸಿ.",
+  what_to_do_step2_title: "ಪುರಾವೆಗಳನ್ನು ಸಂರಕ್ಷಿಸಿ",
+  what_to_do_step2_desc: "ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ, ಸಂದೇಶಗಳು, ಇಮೇಲ್‌ಗಳು ಮತ್ತು URL ಗಳನ್ನು ಉಳಿಸಿ. ನಿಂದನೀಯ ವಿಷಯವನ್ನು ತಕ್ಷಣವೇ ಅಳಿಸಬೇಡಿ ಏಕೆಂದರೆ ಅದು ಪುರಾವೆಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.",
+  what_to_do_step3_title: "ನಿರ್ಬಂಧಿಸಿ ಮತ್ತು ವರದಿ ಮಾಡಿ",
+  what_to_do_step3_desc: "ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ನಲ್ಲಿ ಆಕ್ಷೇಪಾರ್ಹ ಬಳಕೆದಾರರನ್ನು ನಿರ್ಬಂಧಿಸಿ. ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ, ಆಟ ಅಥವಾ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿರುವ ಅಂತರ್ನಿರ್ಮಿತ ವರದಿ ಸಾಧನಗಳನ್ನು ಬಳಸಿ.",
+  what_to_do_step4_title: "ಅಧಿಕೃತ ಬೆಂಬಲವನ್ನು ಪಡೆಯಿರಿ",
+  what_to_do_step4_desc: "ಮಗುವಿಗೆ ಬೆದರಿಕೆ ಹಾಕಿದ್ದರೆ ಅಥವಾ ವಂಚನೆಗೊಳಗಾಗಿದ್ದರೆ, ರಾಷ್ಟ್ರೀಯ ಸೈಬರ್ ಕ್ರೈಮ್ ಪೋರ್ಟಲ್‌ಗೆ ವರದಿ ಮಾಡಿ ಅಥವಾ ಅಧಿಕೃತ ಸಹಾಯವಾಣಿಗೆ ಕರೆ ಮಾಡಿ.",
+  btn_print_dos_donts: "ಮಾಡಬೇಕಾದದ್ದು ಮತ್ತು ಮಾಡಬಾರದ್ದನ್ನು ಮುದ್ರಿಸಿ",
+  btn_download_guide: "ಪೋಷಕರ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶಿ (PDF) ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+});
+
+
+
+// --- Update Accordion Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+  // Re-bind or override the Accordion logic
+  const headers = document.querySelectorAll('.accordion-header');
+
+  headers.forEach(header => {
+    // Accessibility - Keyboard Support
+    header.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        header.click();
+      }
+    });
+
+    // Click Logic
+    header.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+      // Close all OTHERS
+      headers.forEach(h => {
+        if (h !== header) {
+          h.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle the clicked one
+      header.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+    });
+  });
+
+  // All accordions should be default closed per user request.
+});
+
+// --- Inject Age-Wise Translations ---
+Object.assign(translations.en, {
+  age_8_12_1: "Establish basic internet safety rules.",
+  age_8_12_2: "Ensure adult supervision during screen time.",
+  age_8_12_3: "Use parental controls to restrict access to kids-only apps.",
+  age_13_16_1: "Discuss responsible social media usage and privacy settings.",
+  age_13_16_2: "Educate them about cyberbullying and how to report it.",
+  age_13_16_3: "Warn them against gaming scams and interacting with unknown players.",
+  age_17_1: "Discuss online relationships and the dangers of sharing intimate photos.",
+  age_17_2: "Educate them to spot financial frauds and phishing links.",
+  age_17_3: "Warn them about fake job scams and identity theft tricks."
+});
+
+Object.assign(translations.hi, {
+  age_8_12_1: "इंटरनेट सुरक्षा के बुनियादी नियम स्थापित करें।",
+  age_8_12_2: "स्क्रीन समय के दौरान वयस्क पर्यवेक्षण सुनिश्चित करें।",
+  age_8_12_3: "केवल बच्चों वाले ऐप्स तक पहुंच सीमित करने के लिए अभिभावकीय नियंत्रण का उपयोग करें।",
+  age_13_16_1: "जिम्मेदार सोशल मीडिया उपयोग और गोपनीयता सेटिंग्स पर चर्चा करें।",
+  age_13_16_2: "उन्हें साइबरबुलिंग के बारे में शिक्षित करें और इसे कैसे रिपोर्ट करें।",
+  age_13_16_3: "उन्हें गेमिंग घोटालों और अज्ञात खिलाड़ियों के साथ बातचीत करने की चेतावनी दें।",
+  age_17_1: "ऑनलाइन संबंधों और अंतरंग तस्वीरें साझा करने के खतरों पर चर्चा करें।",
+  age_17_2: "उन्हें वित्तीय धोखाधा़ी और फ़िशिंग लिंक पहचानने के लिए शिक्षित करें।",
+  age_17_3: "उन्हें नकली नौकरी घोटालों और पहचान की चोरी की चालों के बारे में चेतावनी दें।"
+});
+
+Object.assign(translations.kn, {
+  age_8_12_1: "ಮೂಲ ಅಂತರ್ಜಾಲ ಸುರಕ್ಷತಾ ನಿಯಮಗಳನ್ನು ಸ್ಥಾಪಿಸಿ.",
+  age_8_12_2: "ಸ್ಕ್ರೀನ್ ಸಮಯದ ಅವಧಿಯಲ್ಲಿ ವಯಸ್ಕರ ಮೇಲ್ವಿಚಾರಣೆಯನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+  age_8_12_3: "ಮಕ್ಕಳ ಅಪ್ಲಿಕೇಶನ್ಗಳಿಗೆ ಮಾತ್ರ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲು ಪೊೇಷಕರ ನಿಯಂತ್ರಣಗಳನ್ನು ಬಳಸಿ.",
+  age_13_16_1: "ಜವಾಬ್ದಾರಿಯುತ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಬಳಕೆ ಮತ್ತು ಗೌಪ್ಯತೆ ಸೆಟ್ಟಿಂಗ್ಸ್ ಚರ್ಚಿಸಿ.",
+  age_13_16_2: "ಸೈಬರ್ ಬಲ್ಲಿಂಗ್ ಮತ್ತು ಅದನ್ನು ಹೇಗೆ ವರದಿ ಮಾಡುವುದು ಎಂಬುದರ ಕುರಿತು ಅವರಿಗೆ ಶಿಕ್ಷಣ ನೀಡಿ.",
+  age_13_16_3: "ಗೇಮಿಂಗ್ ವಂಚನೆಗಳು ಮತ್ತು ಅಪರಿಚಿತ ಆಟಗಾರರೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸುವ ವಿರುದ್ಧ ಅವರಿಗೆ ಎಚ್ಚರಿಕೆ ನೀಡಿ.",
+  age_17_1: "ಆನ್ಲೈನ್ ಸಂಬಂಧಗಳು ಮತ್ತು ಆಪ್ತ ಫೋಟೋಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳುವ ಅಪಾಯಗಳನ್ನು ಚರ್ಚಿಸಿ.",
+  age_17_2: "ಹಣಕಾಸಿನ ವಂಚನೆಗಳು ಮತ್ತು ಫಿಶಿಂಗ್ ಲಿಂಕ್ಗಳನ್ನು ಗುರುತಿಸಲು ಅವರಿಗೆ ಶಿಕ್ಷಣ ನೀಡಿ.",
+  age_17_3: "ನಕಲಿ ಉದ್ಯೋಗ ವಂಚನೆಗಳು ಮತ್ತು ಗುರುತಿನ ಕಳ್ಳತನದ ತಂತ್ರಗಳ ಬಗ್ಗೆ ಅವರಿಗೆ ಎಚ್ಚರಿಕೆ ನೀಡಿ."
+});

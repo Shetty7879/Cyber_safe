@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container nav-container">
             <div class="logo-section">
-                <img src="https://via.placeholder.com/40/1d4ed8/ffffff?text=CS" alt="Logo" class="logo-img">
+                <img src="assests/India_cybersecurity_logo.jpg" alt="Logo" class="logo-img">
                 <a href="index.html" class="site-title">CyberSafe India</a>
             </div>
 
@@ -64,6 +64,25 @@
 
     <main class="main-content">
         <div class="container">
+            <div class="page-logo-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="page-logo"
+                    aria-label="CyberSafe Parents Logo">
+                    <defs>
+                        <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#eff6ff" />
+                            <stop offset="100%" stop-color="#dbeafe" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 12 L82 23 V45 C82 68 50 88 50 88 C50 88 18 68 18 45 V23 Z" fill="url(#shieldGrad)"
+                        stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Parent Silhouette -->
+                    <circle cx="40" cy="40" r="8" fill="#1e40af" />
+                    <path d="M40 52 C26 52 18 64 18 75 H58 C58 64 50 52 40 52 Z" fill="#1e40af" />
+                    <!-- Child Silhouette -->
+                    <circle cx="62" cy="50" r="6" fill="#3b82f6" />
+                    <path d="M62 59 C52 59 45 68 45 75 H78 C78 68 70 59 62 59 Z" fill="#3b82f6" />
+                </svg>
+            </div>
             <h1 class="section-title" data-i18n="parentsCardTitle" style="margin-bottom: 2rem;">Cyber Safety for Parents
             </h1>
 
@@ -120,61 +139,192 @@
                         </div>
                     </div>
 
-                    <!-- Parent-Child Conversation Tips -->
-                    <h3 data-i18n="parents_conv_title"
-                        style="margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.25rem;">Talking to Your Child About
-                        Online Safety</h3>
-                    <ul style="margin-bottom: 1.5rem; margin-left: 1.5rem;">
-                        <li data-i18n="parents_conv_1">Encourage open and honest conversations</li>
-                        <li data-i18n="parents_conv_2">Listen without judgment or anger</li>
-                        <li data-i18n="parents_conv_3">Ask about apps, games, and friends they interact with online</li>
-                        <li data-i18n="parents_conv_4">Explain online risks in simple, age-appropriate language</li>
-                        <li data-i18n="parents_conv_5">Reassure children they can report problems without fear</li>
-                        <li data-i18n="parents_conv_6">Discuss what to do if something feels uncomfortable online</li>
-                    </ul>
-
-                    <!-- Age-Wise Guidance -->
+                    <!-- Age-Wise Guidance (Accordion) -->
                     <h3 data-i18n="parents_age_title"
-                        style="margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.25rem;">Age-Wise Online Safety
+                        style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.25rem;">Age-Wise Online Safety
                         Guidance</h3>
-                    <div class="grid"
-                        style="margin-bottom: 2rem; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="accordion" id="age-accordion">
                         <!-- Ages 8-12 -->
-                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
-                            <h4 data-i18n="parents_age_8_12"
-                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 8–12</h4>
-                            <ul>
-                                <li data-i18n="age_8_12_1">Use parental controls and supervised browsing</li>
-                                <li data-i18n="age_8_12_2">Teach children not to share personal information</li>
-                                <li data-i18n="age_8_12_3">Limit screen time and app downloads</li>
-                                <li data-i18n="age_8_12_4">Explain safe behavior in games and chat features</li>
-                            </ul>
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="age-8-12-content">
+                                <span data-i18n="parents_age_8_12">Ages 8–12</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content" id="age-8-12-content">
+                                <div class="accordion-content-inner">
+                                    <ul class="styled-list">
+                                        <li data-i18n="age_8_12_1">Establish basic internet safety rules</li>
+                                        <li data-i18n="age_8_12_2">Ensure adult supervision during screen time</li>
+                                        <li data-i18n="age_8_12_3">Use parental controls to restrict access to kids-only
+                                            apps</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <!-- Ages 13-16 -->
-                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
-                            <h4 data-i18n="parents_age_13_16"
-                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 13–16</h4>
-                            <ul>
-                                <li data-i18n="age_13_16_1">Discuss social media privacy settings</li>
-                                <li data-i18n="age_13_16_2">Talk about cyberbullying and peer pressure</li>
-                                <li data-i18n="age_13_16_3">Encourage strong passwords and account security</li>
-                                <li data-i18n="age_13_16_4">Explain risks of sharing photos or personal details</li>
-                            </ul>
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="age-13-16-content">
+                                <span data-i18n="parents_age_13_16">Ages 13–16</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content" id="age-13-16-content">
+                                <div class="accordion-content-inner">
+                                    <ul class="styled-list">
+                                        <li data-i18n="age_13_16_1">Discuss responsible social media usage and privacy
+                                            settings</li>
+                                        <li data-i18n="age_13_16_2">Educate them about cyberbullying and how to report
+                                            it</li>
+                                        <li data-i18n="age_13_16_3">Warn them against gaming scams and interacting with
+                                            unknown players</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <!-- Ages 17+ -->
-                        <div class="card" style="padding: 1rem; border-top: 4px solid var(--color-primary);">
-                            <h4 data-i18n="parents_age_17plus"
-                                style="color: var(--color-primary); margin-bottom: 0.5rem;">Ages 17+</h4>
-                            <ul>
-                                <li data-i18n="age_17_1">Discuss digital footprint and online reputation</li>
-                                <li data-i18n="age_17_2">Educate about online scams and phishing</li>
-                                <li data-i18n="age_17_3">Encourage responsible social media use</li>
-                                <li data-i18n="age_17_4">Teach safe online transactions and data protection</li>
-                            </ul>
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false" aria-controls="age-17-plus-content">
+                                <span data-i18n="parents_age_17plus">Ages 17+</span>
+                                <span class="accordion-icon">▼</span>
+                            </button>
+                            <div class="accordion-content" id="age-17-plus-content">
+                                <div class="accordion-content-inner">
+                                    <ul class="styled-list">
+                                        <li data-i18n="age_17_1">Discuss online relationships and the dangers of sharing
+                                            intimate photos</li>
+                                        <li data-i18n="age_17_2">Educate them to spot financial frauds and phishing
+                                            links</li>
+                                        <li data-i18n="age_17_3">Warn them about fake job scams and identity theft
+                                            tricks</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="tip-box" style="margin-top: 1rem; border-left-color: var(--color-primary);">
+                    <!-- Talk to Your Child – Conversation Starters -->
+                    <h3 data-i18n="parents_conv_starters_title"
+                        style="margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.25rem;">Talk to Your Child –
+                        Conversation Starters</h3>
+                    <div class="card bg-soft-blue">
+                        <p data-i18n="parents_conv_starters_desc"
+                            style="margin-bottom: 1rem; color: var(--color-text-muted);">Use these supportive,
+                            open-ended questions to check in on their digital lives without causing them to become
+                            defensive:</p>
+                        <ul class="dialogue-list">
+                            <li data-i18n="conv_start_1">"What’s your favorite app or game right now? Can you show me
+                                how it works?"</li>
+                            <li data-i18n="conv_start_2">"Have you or your friends ever seen anything online that made
+                                you feel upset or weird?"</li>
+                            <li data-i18n="conv_start_3">"How do you decide what rules to follow when talking to people
+                                online?"</li>
+                            <li data-i18n="conv_start_4">"If someone was being mean to you online, what would you do?"
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Warning Signs to Watch For -->
+                    <h3 data-i18n="parents_warning_title"
+                        style="margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.25rem;">Warning Signs to Watch For
+                    </h3>
+                    <div class="card bg-soft-red border-left-danger">
+                        <p data-i18n="parents_warning_desc"
+                            style="margin-bottom: 1rem; color: var(--color-text-muted);">Sudden behavioral changes can
+                            indicate that a child is experiencing cyberbullying, grooming, or exposure to inappropriate
+                            content. Watch for:</p>
+                        <div class="grid" style="gap: 1rem;">
+                            <div class="warning-item">
+                                <span class="warning-icon">⚠️</span>
+                                <span data-i18n="warning_sign_1">Suddenly turning off the screen or hiding the device
+                                    when a parent walks in.</span>
+                            </div>
+                            <div class="warning-item">
+                                <span class="warning-icon">⚠️</span>
+                                <span data-i18n="warning_sign_2">Reluctance to go to school or participate in social
+                                    activities.</span>
+                            </div>
+                            <div class="warning-item">
+                                <span class="warning-icon">⚠️</span>
+                                <span data-i18n="warning_sign_3">Withdrawing from family, friends, or usual
+                                    hobbies.</span>
+                            </div>
+                            <div class="warning-item">
+                                <span class="warning-icon">⚠️</span>
+                                <span data-i18n="warning_sign_4">Unexplained mood swings, anger, or sadness after using
+                                    devices.</span>
+                            </div>
+                            <div class="warning-item">
+                                <span class="warning-icon">⚠️</span>
+                                <span data-i18n="warning_sign_5">Receiving unexpected gifts, packages, or calls from
+                                    unknown numbers.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What Parents Should Do -->
+                    <h3 data-i18n="parents_what_to_do_title"
+                        style="margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.25rem;">What Parents Should Do If
+                        Something Goes Wrong</h3>
+                    <div class="timeline-steps">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h4 data-i18n="what_to_do_step1_title">Stay Calm and Listen</h4>
+                                <p data-i18n="what_to_do_step1_desc">Do not get angry or blame the child. Reacting
+                                    negatively might make them hide future issues. Listen to their whole story.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h4 data-i18n="what_to_do_step2_title">Preserve Evidence</h4>
+                                <p data-i18n="what_to_do_step2_desc">Take screenshots, save messages, emails, and URLs.
+                                    Do not delete the abusive content immediately as it serves as proof.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h4 data-i18n="what_to_do_step3_title">Block and Report</h4>
+                                <p data-i18n="what_to_do_step3_desc">Block the offending user on the platform. Use
+                                    built-in reporting tools on the social media, game, or app.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <h4 data-i18n="what_to_do_step4_title">Seek Official Support</h4>
+                                <p data-i18n="what_to_do_step4_desc">If the child is threatened or scammed, report it to
+                                    the National Cyber Crime portal or call the official helpline.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="actions-group no-print">
+                        <button onclick="window.print()" class="btn btn-outline"
+                            style="display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 9V2h12v7"></path>
+                                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                </path>
+                                <path d="M6 14h12v8H6z"></path>
+                            </svg>
+                            <span data-i18n="btn_print_dos_donts">Print Do's & Don'ts</span>
+                        </button>
+                        <a href="parents.html" onclick="window.print(); return false;" class="btn btn-primary"
+                            style="display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span data-i18n="btn_download_guide">Download Parent Safety Guide (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="tip-box" style="margin-top: 3rem; border-left-color: var(--color-primary);">
                         <strong data-i18n="parents_help_title">Help & Reporting:</strong>
                         <span data-i18n="parents_help_desc">If your child faces online abuse, cyberbullying, or scams,
                             collect evidence and report the issue through official channels.</span>
